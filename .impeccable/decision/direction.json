@@ -1,0 +1,146 @@
+{
+  "title": "Elige el mundo visual de la landing VitaClinic",
+  "question": "El roll asignó «La curva de 12 meses». Consérvala, toma una alternativa o vuelve a tirar.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "La curva de 12 meses",
+      "kicker": "THE ROLL",
+      "lineage": "gráficas de evolución clínica (hojas de seguimiento de peso, curvas de crecimiento)",
+      "thesis": "Una sola curva de peso recorre toda la página de arriba a abajo; cada sección es una anotación clavada en un mes del tratamiento.",
+      "palette": ["#5B7B84", "#223B41", "#EEF3F2", "#2F3030", "#D7B56A"],
+      "materials": ["campo slate-teal profundo", "trazo de curva en blanco", "retícula clínica fina", "etiquetas de hito con fecha"],
+      "viewport": "Hero en campo teal oscuro: el titular a la izquierda, el CTA de WhatsApp debajo, y a la derecha la curva empieza a dibujarse desde el mes 0 con el hito «10% OFF primera consulta» clavado en el origen. Al hacer scroll la curva sigue bajando por la página y la sección final muestra que se mantiene plana tras concluir (sin reganancia).",
+      "risk": "La curva es ilustrativa, no datos reales: debe etiquetarse como tal y nunca prometer kilos. Si se dibuja tímida, se convierte en un adorno de fondo.",
+      "raised": [
+        {"from": "challenger-vu-meter", "raise": "La curva y las cifras se dibujan con masa y amortiguación (easing balístico), nunca valores instantáneos."},
+        {"from": "challenger-factory-sleeve", "raise": "Un solo trazo es dueño del campo: grandes zonas de teal sin imprimir, sin tarjetas rellenando huecos."},
+        {"from": "challenger-indoor-sun", "raise": "Compromiso ambiental total: el teal de marca ocupa más del 40% de la superficie, no solo acentos."},
+        {"from": "challenger-blast-manifesto", "raise": "El display nunca se encoge en móvil: se reapila."}
+      ],
+      "comp": ".impeccable/mocks/decision/assigned.webp",
+      "wireframe": {"cols": 12, "rows": 10, "regions": [
+        {"label": "nav", "x": 0, "y": 0, "w": 12, "h": 1},
+        {"label": "titular + CTA WhatsApp", "x": 0, "y": 1, "w": 5, "h": 5, "accent": true},
+        {"label": "curva mes 0 → 12", "x": 5, "y": 1, "w": 7, "h": 9, "accent": true},
+        {"label": "promos 10% / 15%", "x": 0, "y": 6, "w": 5, "h": 4}
+      ]}
+    },
+    {
+      "id": "model-pick",
+      "label": "El ECG en vivo",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "monitores de signos vitales; la línea de ECG del propio logotipo",
+      "thesis": "La línea de latido del isotipo se vuelve un hilo vivo que atraviesa toda la página y late con cada sección.",
+      "palette": ["#2F3030", "#5B7B84", "#9FC2C8", "#F4F7F7"],
+      "materials": ["vidrio de monitor", "trazo luminoso", "tipografía de instrumento"],
+      "viewport": "Fondo carbón, el corazón del logo enorme a la derecha con su trazo animándose en loop; titular y CTA a la izquierda.",
+      "risk": "Es la lectura literal del logotipo y la dirección más familiar: muchas clínicas ya usan el pulso como motivo.",
+      "comp": ".impeccable/mocks/decision/model-pick.webp",
+      "wireframe": {"cols": 12, "rows": 10, "regions": [
+        {"label": "nav", "x": 0, "y": 0, "w": 12, "h": 1},
+        {"label": "titular + CTA", "x": 0, "y": 2, "w": 5, "h": 5, "accent": true},
+        {"label": "corazón ECG animado", "x": 6, "y": 1, "w": 6, "h": 8, "accent": true},
+        {"label": "hilo de pulso continúa", "x": 0, "y": 9, "w": 12, "h": 1}
+      ]}
+    },
+    {
+      "id": "challenger-vu-meter",
+      "label": "Puente de vúmetros",
+      "verdict": "competitive",
+      "lineage": "signals-instruments-vu-meter-bridge",
+      "thesis": "Cada parámetro del tratamiento (peso, apetito, glucosa, energía) es un medidor de aguja que se inclina al mismo compás.",
+      "palette": ["#F3EDE0", "#1A1A1A", "#5B7B84", "#C8372D"],
+      "materials": ["caras de medidor marfil tras vidrio", "agujas negras", "marco de nogal y acero"],
+      "viewport": "Una fila de medidores idénticos ocupa el hero; el titular va debajo como etiqueta de canal.",
+      "case": "Fusiona bien con «seguimiento»: el paciente se identifica con ser monitoreado. Pierde en claridad: el medidor no explica qué es GLP-1 ni cuánto cuesta.",
+      "risk": "Lee como estudio de grabación, no como clínica, si la metáfora no se ata a parámetros reales.",
+      "comp": ".impeccable/mocks/decision/challenger-vu-meter.webp",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-vu-meter-bridge-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/signals-instruments-vu-meter-bridge.webp"
+    },
+    {
+      "id": "challenger-indoor-sun",
+      "label": "Sol de interior",
+      "verdict": "declined",
+      "lineage": "light-shadow-caustics-indoor-weather-sun",
+      "thesis": "Toda la página bañada en un ámbar monofrecuencia con un sol a medias reflejado.",
+      "palette": ["#E8A317", "#3A2A05", "#000000"],
+      "materials": ["neblina ámbar", "espejo de techo"],
+      "viewport": "Un disco solar enorme y siluetas; el producto desaparece en la bruma.",
+      "case": "El ámbar monofrecuencia aplasta el teal de marca y el paciente no se identifica con una instalación de arte.",
+      "kept": "Compromiso ambiental total: un color dueño de toda la superficie.",
+      "risk": "Sin relación con la clínica.",
+      "hero": "https://impeccable.style/worlds/cards/light-shadow-caustics-indoor-weather-sun-hero.webp"
+    },
+    {
+      "id": "challenger-kiln-shelf",
+      "label": "Estante de horno cerámico",
+      "verdict": "declined",
+      "lineage": "clay-ceramics-fracture-glaze-river-shelf",
+      "thesis": "Tazas esmaltadas donde el color escurre y se detiene.",
+      "palette": ["#F6F4EE", "#1E3A8A", "#0B1F5C"],
+      "materials": ["estante de caolín", "esmalte cobalto"],
+      "viewport": "Fila de muestras con tarjetas de receta.",
+      "case": "Nada en la cerámica dice tratamiento médico; la metáfora exige explicación.",
+      "kept": "Orden de lectura vertical por gravedad y estados nombrados (seco → fundido) para las etapas del tratamiento.",
+      "risk": "Sin relación con la clínica.",
+      "hero": "https://impeccable.style/worlds/cards/clay-ceramics-fracture-glaze-river-shelf-hero.webp"
+    },
+    {
+      "id": "challenger-ebru",
+      "label": "Pigmento flotante (ebru)",
+      "verdict": "declined",
+      "lineage": "medium-native-ebru-floated-pigment",
+      "thesis": "Colores que se desplazan en un baño de agua y se levantan al papel en un solo contacto.",
+      "palette": ["#2B4C7E", "#C9403A", "#E9E2CF"],
+      "materials": ["baño espesado", "papel encolado"],
+      "viewport": "Un lienzo fluido donde cada toque desplaza el color.",
+      "case": "Bello, pero contradice la claridad: una landing de captación necesita leerse en 3 segundos.",
+      "kept": "Una sola superficie, un solo pase: sin saltos de vista, todo ocurre en un scroll continuo.",
+      "risk": "Sin relación con la clínica.",
+      "hero": "https://impeccable.style/worlds/cards/medium-native-ebru-floated-pigment-hero.webp"
+    },
+    {
+      "id": "challenger-blast-manifesto",
+      "label": "Página manifiesto 1914",
+      "verdict": "declined",
+      "lineage": "design-canon-blast-manifesto-page",
+      "thesis": "Todo en tipografía de madera gritando, cuñas negras, sin imágenes.",
+      "palette": ["#B57B8F", "#111111"],
+      "materials": ["papel puce", "tinta negra"],
+      "viewport": "Bloques de mayúsculas condensadas girados 90°.",
+      "case": "El grito tipográfico contradice la confianza clínica que pide el producto.",
+      "kept": "El display nunca se encoge: se reapila en pantallas estrechas.",
+      "risk": "Agresivo para un paciente que busca cuidado.",
+      "hero": "https://impeccable.style/worlds/cards/design-canon-blast-manifesto-page-hero.webp"
+    },
+    {
+      "id": "challenger-factory-sleeve",
+      "label": "Funda de catálogo Factory",
+      "verdict": "declined",
+      "lineage": "brand-identity-canon-saville-catalog-sleeve",
+      "thesis": "Negro mate, un trazo de púlsar en blanco y códigos de color en lugar de palabras.",
+      "palette": ["#000000", "#FFFFFF", "#F2A900", "#1E7A46"],
+      "materials": ["cartón mate", "líneas blancas"],
+      "viewport": "Un púlsar blanco dueño del campo negro, sin nombre.",
+      "case": "Esconder el nombre y hablar en código es lo contrario de una landing de conversión.",
+      "kept": "Vastas zonas sin imprimir y un solo trazo dueño del campo.",
+      "risk": "Ilegible para el visitante que llega de un anuncio.",
+      "hero": "https://impeccable.style/worlds/cards/brand-identity-canon-saville-catalog-sleeve-hero.webp"
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code", "toggle": false},
+  "canon": true,
+  "canonCard": {
+    "label": "El estándar de la categoría",
+    "thesis": "La landing médica que todos esperan (tipo Clivi): fondo blanco, foto de paciente sonriendo, tarjetas de beneficios, precio y mapa.",
+    "palette": ["#FFFFFF", "#5B7B84", "#2F3030", "#F2F5F5"],
+    "materials": ["retícula limpia", "fotografía de stock", "tarjetas con sombra"],
+    "viewport": "Titular centrado, foto a la derecha, botón de WhatsApp, fila de beneficios.",
+    "risk": "Indistinguible de la competencia por diseño.",
+    "comp": ".impeccable/mocks/decision/canon.webp"
+  },
+  "steer": true
+}

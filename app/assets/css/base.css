@@ -1,0 +1,201 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scrollbar-color: var(--field-400) var(--field-050);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--fg);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+/* Superficies del navegador, temadas desde la paleta */
+::selection {
+  background: var(--mark-500);
+  color: var(--field-900);
+}
+.on-field ::selection {
+  background: var(--field-050);
+  color: var(--field-900);
+}
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--field-050);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--field-400);
+  border: 3px solid var(--field-050);
+  border-radius: var(--radius-pill);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--field-500);
+}
+
+:focus-visible {
+  outline: 3px solid var(--mark-500);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+figure {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: var(--lh-snug);
+  letter-spacing: var(--track-tight);
+  text-wrap: balance;
+  font-variation-settings: 'opsz' 96, 'wdth' 100;
+}
+
+h1 {
+  font-size: var(--fs-display);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--track-display);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  font-weight: 600;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+  padding: 0;
+}
+
+.num {
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+.container {
+  width: min(100% - 2 * var(--gutter), var(--container));
+  margin-inline: auto;
+}
+
+/* Cabecera de sección: título a la izquierda, anotación de mes a la derecha (nunca encima) */
+.sec-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-3) var(--space-6);
+}
+.sec-head h2 {
+  max-width: 22ch;
+}
+.sec-head .pin {
+  padding-bottom: 0.35em;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Revelado al hacer scroll: visible por defecto, animado solo cuando JS lo marca */
+[data-reveal] {
+  --reveal-y: 28px;
+  --reveal-delay: 0ms;
+}
+.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(var(--reveal-y));
+  filter: blur(6px);
+  transition:
+    opacity var(--dur-slow) var(--ease-out) var(--reveal-delay),
+    transform var(--dur-slow) var(--ease-out) var(--reveal-delay),
+    filter var(--dur-slow) var(--ease-out) var(--reveal-delay);
+}
+.js [data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+  filter: blur(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .js [data-reveal] {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

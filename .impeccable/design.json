@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-20T00:00:00.000Z",
+  "title": "Design System: VitaClinic · Landing GLP-1",
+  "extensions": {
+    "colorMeta": {
+      "field-700": {
+        "role": "primary",
+        "displayName": "Campo teal",
+        "canonical": "#223b41",
+        "tonalRamp": ["#16292d", "#1d363b", "#223b41", "#2c4a51", "#3a5e66", "#5b7b84", "#87a3aa", "#b9cbcf", "#dbe5e7", "#eef3f2"]
+      },
+      "field-800": {
+        "role": "primary",
+        "displayName": "Campo nocturno",
+        "canonical": "#1d363b",
+        "tonalRamp": ["#16292d", "#1d363b", "#223b41", "#2c4a51", "#3a5e66", "#5b7b84", "#87a3aa", "#b9cbcf", "#dbe5e7", "#eef3f2"]
+      },
+      "field-900": {
+        "role": "primary",
+        "displayName": "Campo profundo",
+        "canonical": "#16292d",
+        "tonalRamp": ["#16292d", "#1d363b", "#223b41", "#2c4a51", "#3a5e66", "#5b7b84", "#87a3aa", "#b9cbcf", "#dbe5e7", "#eef3f2"]
+      },
+      "brand-teal": {
+        "role": "primary",
+        "displayName": "Teal de marca (corazón / ECG)",
+        "canonical": "#5b7b84",
+        "tonalRamp": ["#16292d", "#1d363b", "#223b41", "#2c4a51", "#3a5e66", "#5b7b84", "#87a3aa", "#b9cbcf", "#dbe5e7", "#eef3f2"]
+      },
+      "brand-teal-deep": {
+        "role": "primary",
+        "displayName": "Teal del wordmark",
+        "canonical": "#4e6668",
+        "tonalRamp": ["#16292d", "#1d363b", "#223b41", "#2c4a51", "#3a5e66", "#5b7b84", "#87a3aa", "#b9cbcf", "#dbe5e7", "#eef3f2"]
+      },
+      "brand-ink": {
+        "role": "neutral",
+        "displayName": "Carbón del logo oscuro",
+        "canonical": "#2f3030",
+        "tonalRamp": ["#1c2426", "#2f3030", "#4e6668", "#6f8a90", "#87a3aa", "#b9cbcf", "#dbe5e7", "#eef3f2"]
+      },
+      "mark-500": {
+        "role": "secondary",
+        "displayName": "Dorado del hito",
+        "canonical": "#d7b56a",
+        "tonalRamp": ["oklch(25% 0.06 85)", "oklch(38% 0.09 85)", "oklch(52% 0.11 85)", "#b9933f", "#d7b56a", "oklch(85% 0.09 85)", "oklch(92% 0.05 85)", "#fbf5e6"]
+      },
+      "mark-600": {
+        "role": "secondary",
+        "displayName": "Dorado profundo (sin uso en la construcción)",
+        "canonical": "#b9933f",
+        "tonalRamp": ["oklch(25% 0.06 85)", "oklch(38% 0.09 85)", "oklch(52% 0.11 85)", "#b9933f", "#d7b56a", "oklch(85% 0.09 85)", "oklch(92% 0.05 85)", "#fbf5e6"]
+      },
+      "mark-050": {
+        "role": "secondary",
+        "displayName": "Dorado pálido (sin uso en la construcción)",
+        "canonical": "#fbf5e6",
+        "tonalRamp": ["oklch(25% 0.06 85)", "oklch(38% 0.09 85)", "oklch(52% 0.11 85)", "#b9933f", "#d7b56a", "oklch(85% 0.09 85)", "oklch(92% 0.05 85)", "#fbf5e6"]
+      },
+      "wa": {
+        "role": "tertiary",
+        "displayName": "Verde WhatsApp",
+        "canonical": "#25d366",
+        "tonalRamp": ["#06281a", "oklch(30% 0.09 155)", "oklch(42% 0.13 155)", "#128c5e", "oklch(66% 0.18 155)", "#25d366", "oklch(88% 0.12 155)", "oklch(95% 0.06 155)"]
+      },
+      "wa-deep": {
+        "role": "tertiary",
+        "displayName": "Verde WhatsApp profundo (sombra del CTA)",
+        "canonical": "#128c5e",
+        "tonalRamp": ["#06281a", "oklch(30% 0.09 155)", "oklch(42% 0.13 155)", "#128c5e", "oklch(66% 0.18 155)", "#25d366", "oklch(88% 0.12 155)", "oklch(95% 0.06 155)"]
+      },
+      "wa-ink": {
+        "role": "tertiary",
+        "displayName": "Tinta sobre verde WhatsApp (declarada en WaButton.vue)",
+        "canonical": "#06281a",
+        "tonalRamp": ["#06281a", "oklch(30% 0.09 155)", "oklch(42% 0.13 155)", "#128c5e", "oklch(66% 0.18 155)", "#25d366", "oklch(88% 0.12 155)", "oklch(95% 0.06 155)"]
+      },
+      "field-050": {
+        "role": "neutral",
+        "displayName": "Lectura clara",
+        "canonical": "#eef3f2",
+        "tonalRamp": ["#16292d", "#1d363b", "#223b41", "#2c4a51", "#3a5e66", "#5b7b84", "#87a3aa", "#b9cbcf", "#dbe5e7", "#eef3f2"]
+      },
+      "field-100": {
+        "role": "neutral",
+        "displayName": "Lead sobre campo",
+        "canonical": "#dbe5e7",
+        "tonalRamp": ["#16292d", "#1d363b", "#223b41", "#2c4a51", "#3a5e66", "#5b7b84", "#87a3aa", "#b9cbcf", "#dbe5e7", "#eef3f2"]
+      },
+      "field-200": {
+        "role": "neutral",
+        "displayName": "Tinta atenuada sobre campo",
+        "canonical": "#b9cbcf",
+        "tonalRamp": ["#16292d", "#1d363b", "#223b41", "#2c4a51", "#3a5e66", "#5b7b84", "#87a3aa", "#b9cbcf", "#dbe5e7", "#eef3f2"]
+      },
+      "field-300": {
+        "role": "neutral",
+        "displayName": "Iconos y legales sobre campo",
+        "canonical": "#87a3aa",
+        "tonalRamp": ["#16292d", "#1d363b", "#223b41", "#2c4a51", "#3a5e66", "#5b7b84", "#87a3aa", "#b9cbcf", "#dbe5e7", "#eef3f2"]
+      },
+      "field-400": {
+        "role": "neutral",
+        "displayName": "Base de las líneas sobre campo claro",
+        "canonical": "#5b7b84",
+        "tonalRamp": ["#16292d", "#1d363b", "#223b41", "#2c4a51", "#3a5e66", "#5b7b84", "#87a3aa", "#b9cbcf", "#dbe5e7", "#eef3f2"]
+      },
+      "field-500": {
+        "role": "primary",
+        "displayName": "Halo radial de hero y cierre",
+        "canonical": "#3a5e66",
+        "tonalRamp": ["#16292d", "#1d363b", "#223b41", "#2c4a51", "#3a5e66", "#5b7b84", "#87a3aa", "#b9cbcf", "#dbe5e7", "#eef3f2"]
+      },
+      "field-600": {
+        "role": "primary",
+        "displayName": "Paso intermedio del campo (sin uso directo)",
+        "canonical": "#2c4a51",
+        "tonalRamp": ["#16292d", "#1d363b", "#223b41", "#2c4a51", "#3a5e66", "#5b7b84", "#87a3aa", "#b9cbcf", "#dbe5e7", "#eef3f2"]
+      },
+      "ink-900": {
+        "role": "neutral",
+        "displayName": "Tinta principal sobre campo claro",
+        "canonical": "#1c2426",
+        "tonalRamp": ["#1c2426", "#2f3030", "#4e6668", "#6f8a90", "#87a3aa", "#b9cbcf", "#dbe5e7", "#eef3f2"]
+      },
+      "ink-700": {
+        "role": "neutral",
+        "displayName": "Tinta carbón",
+        "canonical": "#2f3030",
+        "tonalRamp": ["#1c2426", "#2f3030", "#4e6668", "#6f8a90", "#87a3aa", "#b9cbcf", "#dbe5e7", "#eef3f2"]
+      },
+      "ink-500": {
+        "role": "neutral",
+        "displayName": "Tinta atenuada sobre campo claro",
+        "canonical": "#4e6668",
+        "tonalRamp": ["#1c2426", "#2f3030", "#4e6668", "#6f8a90", "#87a3aa", "#b9cbcf", "#dbe5e7", "#eef3f2"]
+      },
+      "ink-300": {
+        "role": "neutral",
+        "displayName": "Tinta ligera (sin uso directo)",
+        "canonical": "#6f8a90",
+        "tonalRamp": ["#1c2426", "#2f3030", "#4e6668", "#6f8a90", "#87a3aa", "#b9cbcf", "#dbe5e7", "#eef3f2"]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Papel (literal #fff en paquetes, FAQ y tarjeta de clínica; no tokenizado)",
+        "canonical": "#fff",
+        "tonalRamp": ["#16292d", "#223b41", "#3a5e66", "#5b7b84", "#87a3aa", "#b9cbcf", "#dbe5e7", "#eef3f2", "#fff"]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Línea sobre campo claro",
+        "canonical": "color-mix(in oklab, var(--field-400) 28%, transparent)",
+        "tonalRamp": ["#5b7b84"]
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Línea fuerte sobre campo claro",
+        "canonical": "color-mix(in oklab, var(--field-400) 55%, transparent)",
+        "tonalRamp": ["#5b7b84"]
+      },
+      "line-on-field": {
+        "role": "neutral",
+        "displayName": "Línea sobre campo oscuro (.on-field)",
+        "canonical": "color-mix(in oklab, var(--field-050) 18%, transparent)",
+        "tonalRamp": ["#eef3f2"]
+      },
+      "line-strong-on-field": {
+        "role": "neutral",
+        "displayName": "Línea fuerte sobre campo oscuro (.on-field)",
+        "canonical": "color-mix(in oklab, var(--field-050) 36%, transparent)",
+        "tonalRamp": ["#eef3f2"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "h1 del hero y h2 del cierre; máx. 12–14ch; la segunda línea baja a 500 en field-200." },
+      "numeral": { "displayName": "Cifra protagonista", "purpose": "Precio con count-up y porcentajes de promoción; sustituye a la fotografía." },
+      "headline": { "displayName": "Titular de sección", "purpose": "Todos los h2; máx. 22ch dentro de .sec-head con MonthPin a la derecha." },
+      "title": { "displayName": "Título", "purpose": "h3 de beneficio, paso, promoción, clínica, equipo y summary del FAQ." },
+      "lead": { "displayName": "Lead", "purpose": "Primer párrafo de cada sección, en tinta atenuada; 44–62ch." },
+      "body": { "displayName": "Cuerpo", "purpose": "Párrafos; medida 62ch (40–52ch en listas)." },
+      "label": { "displayName": "Etiqueta", "purpose": "MonthPin, step__when, enlaces de nav, horarios, leyenda de la curva; tabular." },
+      "micro": { "displayName": "Micro", "purpose": "Captions de la curva, legales del pie, chip de promo del plan." }
+    },
+    "shadows": [
+      { "name": "shadow-sm", "value": "0 1px 2px rgba(22, 41, 45, 0.08), 0 2px 8px rgba(22, 41, 45, 0.06)", "purpose": "Tarjeta de clínica en reposo." },
+      { "name": "shadow-md", "value": "0 6px 18px rgba(22, 41, 45, 0.12), 0 2px 6px rgba(22, 41, 45, 0.08)", "purpose": "Tarjetas de hito sobre la curva, tooltip, tarjeta de clínica al hover." },
+      { "name": "shadow-lg", "value": "0 20px 48px rgba(22, 41, 45, 0.22), 0 6px 16px rgba(22, 41, 45, 0.12)", "purpose": "Tarjetas de promoción y paquete activo." },
+      { "name": "shadow-wa", "value": "0 10px 28px rgba(18, 140, 94, 0.35), 0 3px 8px rgba(18, 140, 94, 0.2)", "purpose": "Botón de WhatsApp en reposo; al hover crece a 0 16px 36px rgba(18,140,94,0.4), 0 4px 10px rgba(18,140,94,0.25)." },
+      { "name": "mark-halo", "value": "0 0 0 5px color-mix(in oklab, var(--mark-500) 28%, transparent)", "purpose": "Halo del pin de hito dorado sobre la curva." },
+      { "name": "nav-scrolled", "value": "0 1px 0 var(--line) + backdrop-filter: blur(14px) saturate(140%)", "purpose": "Nav tras 24px de scroll, fondo field-800 al 82 %." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Expo-out: opacidad, color, sombra, revelado." },
+      { "name": "ease-ballistic", "value": "cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "Quint-out: todo lo que se desplaza (botón, flecha, chevron, tarjeta de plan, sticky, hitos)." },
+      { "name": "dur-fast", "value": "180ms", "purpose": "Hover de fondo, tooltip, skip link." },
+      { "name": "dur-base", "value": "420ms", "purpose": "Transformaciones de hover y cambios de estado." },
+      { "name": "dur-slow", "value": "900ms", "purpose": "Revelado [data-reveal] (translateY 28px + blur 6px) y entrada de hitos." },
+      { "name": "dur-draw", "value": "2400ms", "purpose": "Dibujo de la curva (easeOutExpo; 3000ms en el hero con autoplay a 350ms)." },
+      { "name": "halo", "value": "2.2s var(--ease-out) infinite, scale 0.6→1.6, opacity 0.35→0", "purpose": "Pulso del lápiz al final de la curva." },
+      { "name": "reduced-motion", "value": "animation/transition 0.01ms; curva dibujada al instante; revelado visible", "purpose": "prefers-reduced-motion: reduce." }
+    ],
+    "breakpoints": [
+      { "name": "cta-wrap", "value": "420px" },
+      { "name": "promo-stack", "value": "520px" },
+      { "name": "mobile", "value": "640px" },
+      { "name": "curve-compact", "value": "700px" },
+      { "name": "plans-2", "value": "720px" },
+      { "name": "clinics-2", "value": "760px" },
+      { "name": "promos-2", "value": "820px" },
+      { "name": "nav-links", "value": "900px" },
+      { "name": "split-5-7", "value": "960px" },
+      { "name": "plans-4", "value": "1100px" },
+      { "name": "hero-full", "value": "1200px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botón WhatsApp",
+      "kind": "button",
+      "refersTo": "button-wa",
+      "description": "El único CTA del sitio: píldora verde WhatsApp con icono, etiqueta y flecha; brillo que cruza al hover.",
+      "html": "<a class=\"ds-wa\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z M9.2 8.6c.2-.5.5-.5.8-.5h.5c.2 0 .4 0 .5.4l.7 1.7c.1.2 0 .4-.1.5l-.5.6c-.1.2-.2.3 0 .6a6.2 6.2 0 0 0 3 2.7c.3.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l1.6.8c.3.1.4.2.4.4a2 2 0 0 1-.6 1.6c-.4.4-1 .6-1.6.5-1.1-.1-2.6-.6-4.1-2.1-1.6-1.5-2.3-3-2.5-3.9-.2-.8 0-1.6.4-2.2Z\"/></svg><span>Quiero saber si soy candidato</span><svg class=\"ds-wa__arrow\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14 M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-wa { position: relative; display: inline-flex; align-items: center; gap: 0.6em; padding: 0.85em 1.35em 0.85em 1.15em; border-radius: var(--radius-pill, 999px); background: var(--wa, #25d366); color: #06281a; font-family: var(--font-display, 'Bricolage Grotesque', sans-serif); font-weight: 700; font-size: 1rem; line-height: 1.1; letter-spacing: -0.01em; text-decoration: none; white-space: nowrap; box-shadow: var(--shadow-wa, 0 10px 28px rgba(18,140,94,0.35), 0 3px 8px rgba(18,140,94,0.2)); transition: transform 420ms cubic-bezier(0.22,1,0.36,1), box-shadow 420ms cubic-bezier(0.16,1,0.3,1); isolation: isolate; overflow: hidden; } .ds-wa::after { content: ''; position: absolute; inset: 0; background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,0.35) 50%, transparent 70%); transform: translateX(-120%); transition: transform 0.9s cubic-bezier(0.16,1,0.3,1); pointer-events: none; } .ds-wa:hover { transform: translateY(-2px); box-shadow: 0 16px 36px rgba(18,140,94,0.4), 0 4px 10px rgba(18,140,94,0.25); } .ds-wa:hover::after { transform: translateX(120%); } .ds-wa:active { transform: translateY(0) scale(0.985); } .ds-wa:focus-visible { outline: 3px solid var(--mark-500, #d7b56a); outline-offset: 3px; } .ds-wa__arrow { transition: transform 420ms cubic-bezier(0.22,1,0.36,1); } .ds-wa:hover .ds-wa__arrow { transform: translateX(4px); }"
+    },
+    {
+      "name": "Botón fantasma",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Variante ghost del CTA: misma píldora, fondo transparente, anillo interior de 1.5px; usada en los paquetes no activos.",
+      "html": "<a class=\"ds-wa-ghost\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z\"/></svg><span>Quiero el plan de 5 meses</span><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14 M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-wa-ghost { display: inline-flex; align-items: center; gap: 0.6em; padding: 0.85em 1.35em 0.85em 1.15em; border-radius: 999px; background: transparent; color: var(--fg, #1c2426); font-family: var(--font-display, 'Bricolage Grotesque', sans-serif); font-weight: 700; font-size: 0.9rem; line-height: 1.1; letter-spacing: -0.01em; text-decoration: none; white-space: nowrap; box-shadow: inset 0 0 0 1.5px var(--line-strong, color-mix(in oklab, #5b7b84 55%, transparent)); transition: box-shadow 420ms cubic-bezier(0.16,1,0.3,1), transform 420ms cubic-bezier(0.22,1,0.36,1); } .ds-wa-ghost:hover { box-shadow: inset 0 0 0 1.5px var(--fg, #1c2426); transform: translateY(-2px); } .ds-wa-ghost:focus-visible { outline: 3px solid var(--mark-500, #d7b56a); outline-offset: 3px; }"
+    },
+    {
+      "name": "Chips",
+      "kind": "chip",
+      "refersTo": "chip-field",
+      "description": "Tres píldoras: campo (100 % personalizado), hito dorado (15 % OFF) y contorno (etiqueta de clínica sobre campo).",
+      "html": "<div class=\"ds-chips\"><span class=\"ds-chip ds-chip--field\">100% personalizado</span><span class=\"ds-chip ds-chip--mark\">15% OFF de contado</span><span class=\"ds-chip-wrap\"><span class=\"ds-chip ds-chip--outline\">WTC</span></span></div>",
+      "css": ".ds-chips { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; font-family: var(--font-display, 'Bricolage Grotesque', sans-serif); } .ds-chip { display: inline-block; border-radius: 999px; font-weight: 700; line-height: 1.3; } .ds-chip--field { padding: 0.35em 0.8em; background: var(--field-700, #223b41); color: var(--field-050, #eef3f2); font-size: 0.875rem; } .ds-chip--mark { padding: 0.3em 0.7em; background: var(--mark-500, #d7b56a); color: var(--field-900, #16292d); font-size: 0.75rem; letter-spacing: 0.01em; font-variant-numeric: tabular-nums; } .ds-chip-wrap { display: inline-block; padding: 0.5rem 0.75rem; background: var(--field-700, #223b41); border-radius: 12px; } .ds-chip--outline { padding: 0.3em 0.8em; border: 1.5px solid color-mix(in oklab, #eef3f2 36%, transparent); color: var(--field-050, #eef3f2); font-size: 0.875rem; }"
+    },
+    {
+      "name": "Tarjeta de paquete",
+      "kind": "card",
+      "refersTo": "card-plan",
+      "description": "Plan de duración: campo claro con borde 1.5px; al activarse se invierte a campo teal, sube 4px y toma shadow-lg.",
+      "html": "<div class=\"ds-plan\"><span class=\"ds-plan__promo\">15% OFF de contado</span><strong class=\"ds-plan__months\">3 meses</strong><span class=\"ds-plan__who\">Para empezar y ver cómo respondes</span><span class=\"ds-plan__price\">Cotización personalizada</span></div>",
+      "css": ".ds-plan { display: grid; gap: 0.5rem; padding: 1.5rem; max-width: 18rem; border-radius: 20px; border: 1.5px solid color-mix(in oklab, #5b7b84 28%, transparent); background: var(--field-050, #eef3f2); color: var(--ink-900, #1c2426); font-family: var(--font-body, Onest, sans-serif); transition: border-color 420ms cubic-bezier(0.16,1,0.3,1), transform 420ms cubic-bezier(0.22,1,0.36,1), box-shadow 420ms cubic-bezier(0.16,1,0.3,1), background 420ms cubic-bezier(0.16,1,0.3,1); } .ds-plan:hover { border-color: var(--field-700, #223b41); background: var(--field-700, #223b41); color: var(--field-050, #eef3f2); transform: translateY(-4px); box-shadow: 0 20px 48px rgba(22,41,45,0.22), 0 6px 16px rgba(22,41,45,0.12); } .ds-plan__promo { justify-self: start; padding: 0.3em 0.7em; border-radius: 999px; background: var(--mark-500, #d7b56a); color: var(--field-900, #16292d); font-family: var(--font-display, 'Bricolage Grotesque', sans-serif); font-weight: 700; font-size: 0.75rem; letter-spacing: 0.01em; } .ds-plan__months { margin-top: 0.5rem; font-family: var(--font-display, 'Bricolage Grotesque', sans-serif); font-size: clamp(1.6rem, 1.3rem + 1.2vw, 2.4rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1; font-variant-numeric: tabular-nums; } .ds-plan__who { font-size: 0.875rem; color: var(--ink-500, #4e6668); } .ds-plan:hover .ds-plan__who { color: var(--field-200, #b9cbcf); } .ds-plan__price { margin-top: 0.5rem; padding-top: 0.75rem; border-top: 1px solid color-mix(in oklab, #5b7b84 28%, transparent); font-weight: 600; font-size: 0.875rem; }"
+    },
+    {
+      "name": "Tarjeta de promoción",
+      "kind": "card",
+      "refersTo": "card-promo",
+      "description": "Hito dorado sobre campo profundo: porcentaje en numeral 800, cuerpo a la derecha, chip de mes invertido en la esquina.",
+      "html": "<div class=\"ds-promo-bg\"><div class=\"ds-promo\"><div class=\"ds-promo__pct\"><span>10%</span><em>OFF</em></div><div class=\"ds-promo__body\"><h3>En tu primera consulta</h3><p>Valoración médica completa para saber si eres candidato.</p><small>Por tiempo limitado.</small></div><span class=\"ds-promo__month\">Mes 0</span></div></div>",
+      "css": ".ds-promo-bg { padding: 1.5rem; background: var(--field-900, #16292d); } .ds-promo { position: relative; display: grid; grid-template-columns: auto 1fr; gap: 1.5rem; align-items: start; padding: 2rem; border-radius: 20px; background: var(--mark-500, #d7b56a); color: var(--field-900, #16292d); box-shadow: 0 20px 48px rgba(22,41,45,0.22), 0 6px 16px rgba(22,41,45,0.12); overflow: hidden; font-family: var(--font-body, Onest, sans-serif); } .ds-promo::before { content: ''; position: absolute; inset: 0; background: radial-gradient(90% 120% at 100% 0%, rgba(255,255,255,0.35), transparent 60%); pointer-events: none; } .ds-promo__pct { display: flex; align-items: baseline; gap: 0.15em; font-family: var(--font-display, 'Bricolage Grotesque', sans-serif); font-weight: 800; font-size: clamp(2.6rem, 1.6rem + 4vw, 4.5rem); line-height: 0.9; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; } .ds-promo__pct em { font-style: normal; font-size: 0.38em; letter-spacing: 0.02em; } .ds-promo__body h3 { margin: 0; font-family: var(--font-display, 'Bricolage Grotesque', sans-serif); font-weight: 600; font-size: clamp(1.25rem, 1.05rem + 0.8vw, 1.6rem); line-height: 1.15; letter-spacing: -0.015em; } .ds-promo__body p { margin: 0.5rem 0 0; max-width: 48ch; line-height: 1.55; } .ds-promo__body small { display: block; margin-top: 0.75rem; font-size: 0.875rem; color: color-mix(in oklab, #16292d 70%, transparent); } .ds-promo__month { position: absolute; right: 1.5rem; top: 1rem; padding: 0.3em 0.7em; border-radius: 999px; background: var(--field-900, #16292d); color: var(--mark-500, #d7b56a); font-family: var(--font-display, 'Bricolage Grotesque', sans-serif); font-weight: 700; font-size: 0.875rem; }"
+    },
+    {
+      "name": "Tarjeta de clínica",
+      "kind": "card",
+      "refersTo": "card-clinic",
+      "description": "Papel blanco con cabecera on-field, chip de contorno e isotipo; sube 3px al hover.",
+      "html": "<article class=\"ds-clinic\"><div class=\"ds-clinic__head\"><span class=\"ds-clinic__badge\">Centro</span><svg width=\"34\" height=\"31\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M11.9 6.6c1.3-2.3 3.1-3.3 5-3.3 2.8 0 4.6 2.2 4.6 5 0 2.2-1.1 3.8-2.4 5.3-1.5 2-4.6 5-7.2 7.2 M11.9 6.6C11.1 4.8 9.5 3.3 7.3 3.3c-3.1 0-5 2.9-4.7 5.9 M8.6 17.9l3.3 2.9 M3.6 13.3h4.2l1.4-4.5 2.7 7.7 1.9-4.5 1.6 1.3h3.6\"/></svg></div><div class=\"ds-clinic__body\"><h3>Sucursal Centro</h3><p class=\"ds-clinic__addr\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 21s6-5.6 6-11a6 6 0 1 0-12 0c0 5.4 6 11 6 11Z M12 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z\"/></svg><span>Manuel J. Othón 211<br>Tránsito, Cuauhtémoc, 06820 CDMX</span></p><dl class=\"ds-hours\"><dt>Lun–Vie</dt><dd>9:00–18:00</dd><dt>Sáb</dt><dd>9:00–15:00</dd></dl></div></article>",
+      "css": ".ds-clinic { display: grid; max-width: 22rem; border-radius: 20px; overflow: hidden; background: #fff; color: var(--ink-900, #1c2426); border: 1px solid color-mix(in oklab, #5b7b84 28%, transparent); box-shadow: 0 1px 2px rgba(22,41,45,0.08), 0 2px 8px rgba(22,41,45,0.06); font-family: var(--font-body, Onest, sans-serif); line-height: 1.55; transition: transform 420ms cubic-bezier(0.22,1,0.36,1), box-shadow 420ms cubic-bezier(0.16,1,0.3,1); } .ds-clinic:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(22,41,45,0.12), 0 2px 6px rgba(22,41,45,0.08); } .ds-clinic__head { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.5rem; background: var(--field-700, #223b41); color: var(--field-300, #87a3aa); } .ds-clinic__badge { padding: 0.3em 0.8em; border-radius: 999px; border: 1.5px solid color-mix(in oklab, #eef3f2 36%, transparent); color: var(--field-050, #eef3f2); font-family: var(--font-display, 'Bricolage Grotesque', sans-serif); font-weight: 700; font-size: 0.875rem; } .ds-clinic__body { padding: 1.5rem; } .ds-clinic__body h3 { margin: 0; font-family: var(--font-display, 'Bricolage Grotesque', sans-serif); font-weight: 600; font-size: clamp(1.25rem, 1.05rem + 0.8vw, 1.6rem); line-height: 1.15; letter-spacing: -0.015em; } .ds-clinic__addr { margin: 0.75rem 0 0; display: flex; gap: 0.5em; align-items: flex-start; } .ds-clinic__addr svg { flex: none; margin-top: 0.2em; color: var(--brand-teal, #5b7b84); } .ds-hours { margin: 1.5rem 0 0; display: grid; grid-template-columns: 1fr auto; gap: 0.5rem 1.5rem; padding-top: 1rem; border-top: 1px solid color-mix(in oklab, #5b7b84 28%, transparent); font-size: 0.875rem; } .ds-hours dt { color: var(--ink-500, #4e6668); } .ds-hours dd { margin: 0; font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }"
+    },
+    {
+      "name": "Navegación",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Barra sticky de 72px en field-800: logo blanco, enlaces small con subrayado que escala desde la izquierda, CTA píldora.",
+      "html": "<header class=\"ds-nav\"><span class=\"ds-nav__brand\">VitaClinic</span><nav class=\"ds-nav__links\"><a href=\"#\">Tratamiento</a><a href=\"#\">Paquetes</a><a href=\"#\">Seguimiento</a><a href=\"#\">Clínicas</a></nav><a class=\"ds-nav__cta\" href=\"#\">Quiero saber si soy candidato</a></header>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 1.5rem; min-height: 72px; padding: 0 1.5rem; background: var(--field-800, #1d363b); color: var(--field-050, #eef3f2); font-family: var(--font-body, Onest, sans-serif); } .ds-nav__brand { font-family: var(--font-display, 'Bricolage Grotesque', sans-serif); font-weight: 800; font-size: 1.25rem; letter-spacing: -0.03em; } .ds-nav__links { display: flex; gap: 1.5rem; margin-left: auto; font-size: 0.875rem; font-weight: 500; } .ds-nav__links a { position: relative; padding: 0.4em 0; color: var(--field-200, #b9cbcf); text-decoration: none; transition: color 420ms cubic-bezier(0.16,1,0.3,1); } .ds-nav__links a::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: var(--field-050, #eef3f2); transform: scaleX(0); transform-origin: left; transition: transform 420ms cubic-bezier(0.16,1,0.3,1); } .ds-nav__links a:hover { color: var(--field-050, #eef3f2); } .ds-nav__links a:hover::after { transform: scaleX(1); } .ds-nav__links a:focus-visible { outline: 3px solid var(--mark-500, #d7b56a); outline-offset: 3px; border-radius: 6px; } .ds-nav__cta { display: inline-flex; align-items: center; padding: 0.7em 1.1em 0.7em 0.95em; border-radius: 999px; background: var(--wa, #25d366); color: #06281a; font-family: var(--font-display, 'Bricolage Grotesque', sans-serif); font-weight: 700; font-size: 0.9rem; text-decoration: none; white-space: nowrap; box-shadow: 0 10px 28px rgba(18,140,94,0.35), 0 3px 8px rgba(18,140,94,0.2); transition: transform 420ms cubic-bezier(0.22,1,0.36,1); } .ds-nav__cta:hover { transform: translateY(-2px); }"
+    },
+    {
+      "name": "MonthPin (anotación de mes)",
+      "kind": "custom",
+      "refersTo": "label",
+      "description": "Miniatura de la curva compartida con el punto clavado en el mes de la sección; va a la derecha del h2, nunca encima.",
+      "html": "<div class=\"ds-sechead\"><h2>Paquetes y precio transparente</h2><span class=\"ds-pin\"><svg viewBox=\"0 0 1000 600\" class=\"ds-pin__svg\" preserveAspectRatio=\"none\"><path class=\"ds-pin__curve\" d=\"M60 120 C 200 140, 300 300, 420 400 S 700 520, 940 520\"/><line class=\"ds-pin__range\" x1=\"280\" x2=\"940\" y1=\"560\" y2=\"560\"/><line class=\"ds-pin__guide\" x1=\"280\" x2=\"280\" y1=\"40\" y2=\"560\"/><circle class=\"ds-pin__dot\" cx=\"280\" cy=\"270\" r=\"26\"/></svg><span class=\"ds-pin__label\">Mes 3 – 12+ · tu plan</span></span></div>",
+      "css": ".ds-sechead { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 0.75rem 2rem; color: var(--ink-900, #1c2426); } .ds-sechead h2 { margin: 0; max-width: 22ch; font-family: var(--font-display, 'Bricolage Grotesque', sans-serif); font-weight: 700; font-size: clamp(1.9rem, 1.2rem + 2.6vw, 3.25rem); line-height: 1.15; letter-spacing: -0.015em; text-wrap: balance; } .ds-pin { display: inline-flex; align-items: center; gap: 0.6rem; padding-bottom: 0.35em; color: var(--ink-500, #4e6668); font-family: var(--font-body, Onest, sans-serif); font-size: 0.875rem; font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums; } .ds-pin__svg { width: 64px; height: 34px; overflow: visible; } .ds-pin__curve { fill: none; stroke: currentColor; stroke-width: 2.5; vector-effect: non-scaling-stroke; opacity: 0.55; } .ds-pin__guide { stroke: currentColor; stroke-width: 1; stroke-dasharray: 3 4; vector-effect: non-scaling-stroke; opacity: 0.5; } .ds-pin__range { stroke: currentColor; stroke-width: 3; vector-effect: non-scaling-stroke; opacity: 0.7; } .ds-pin__dot { fill: var(--bg, #eef3f2); stroke: var(--ink-900, #1c2426); stroke-width: 3; vector-effect: non-scaling-stroke; } .ds-pin__label { color: var(--ink-900, #1c2426); }"
+    },
+    {
+      "name": "Hito sobre la curva",
+      "kind": "custom",
+      "refersTo": "milestone-card",
+      "description": "Pin de 14px con tarjeta de 12px de radio; la variante dorada marca promociones y reganancia. Mostrado sobre campo teal con un fragmento de curva.",
+      "html": "<div class=\"ds-curve\"><svg viewBox=\"0 0 400 160\" class=\"ds-curve__svg\"><g class=\"ds-curve__grid\"><line x1=\"40\" x2=\"40\" y1=\"10\" y2=\"130\"/><line x1=\"130\" x2=\"130\" y1=\"10\" y2=\"130\"/><line x1=\"220\" x2=\"220\" y1=\"10\" y2=\"130\"/><line x1=\"310\" x2=\"310\" y1=\"10\" y2=\"130\"/><line class=\"ds-curve__axis\" x1=\"40\" x2=\"380\" y1=\"130\" y2=\"130\"/></g><path class=\"ds-curve__main\" d=\"M40 30 C 110 40, 170 90, 220 105 S 320 120, 380 120\"/><circle class=\"ds-curve__pen\" cx=\"380\" cy=\"120\" r=\"6\"/></svg><span class=\"ds-ms ds-ms--mark\" style=\"left:10%;top:19%\"><span class=\"ds-ms__pin\"></span><span class=\"ds-ms__card\"><strong>10% OFF</strong><small>Primera consulta</small></span></span><span class=\"ds-ms ds-ms--plain\" style=\"left:55%;top:66%\"><span class=\"ds-ms__pin\"></span><span class=\"ds-ms__card\"><strong>Menos reganancia</strong><small>Mantenimiento guiado</small></span></span></div>",
+      "css": ".ds-curve { position: relative; max-width: 26rem; padding: 1rem; background: var(--field-700, #223b41); color: var(--field-050, #eef3f2); font-family: var(--font-body, Onest, sans-serif); } .ds-curve__svg { display: block; width: 100%; overflow: visible; } .ds-curve__grid line { stroke: color-mix(in oklab, #eef3f2 18%, transparent); stroke-width: 1; vector-effect: non-scaling-stroke; } .ds-curve__grid .ds-curve__axis { stroke: color-mix(in oklab, #eef3f2 36%, transparent); } .ds-curve__main { fill: none; stroke: currentColor; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; } .ds-curve__pen { fill: currentColor; } .ds-ms { position: absolute; transform: translate(-50%, -50%); } .ds-ms__pin { position: absolute; left: 50%; top: 50%; width: 14px; height: 14px; border-radius: 50%; background: var(--field-700, #223b41); border: 3px solid currentColor; transform: translate(-50%, -50%); } .ds-ms__card { position: absolute; left: 16px; bottom: 12px; z-index: 1; display: flex; flex-direction: column; gap: 2px; padding: 0.5rem 0.7rem; border-radius: 12px; background: var(--field-700, #223b41); color: var(--field-050, #eef3f2); border: 1px solid color-mix(in oklab, #eef3f2 18%, transparent); box-shadow: 0 6px 18px rgba(22,41,45,0.12), 0 2px 6px rgba(22,41,45,0.08); min-width: 9.5rem; line-height: 1.2; white-space: nowrap; } .ds-ms__card strong { font-family: var(--font-display, 'Bricolage Grotesque', sans-serif); font-size: clamp(0.8rem, 0.7rem + 0.5vw, 1rem); font-weight: 700; letter-spacing: -0.01em; } .ds-ms__card small { font-size: clamp(0.68rem, 0.62rem + 0.3vw, 0.8rem); color: var(--field-200, #b9cbcf); } .ds-ms--mark .ds-ms__pin { border-color: var(--mark-500, #d7b56a); background: var(--mark-500, #d7b56a); box-shadow: 0 0 0 5px color-mix(in oklab, #d7b56a 28%, transparent); } .ds-ms--mark .ds-ms__card { background: var(--mark-500, #d7b56a); color: var(--field-900, #16292d); border-color: transparent; } .ds-ms--mark .ds-ms__card small { color: color-mix(in oklab, #16292d 72%, transparent); }"
+    },
+    {
+      "name": "Fila de lista con separadores",
+      "kind": "custom",
+      "refersTo": "title",
+      "description": "Beneficio con tick de mes en columna propia, título y cuerpo; la forma que sustituye a la tarjeta icono+título+texto.",
+      "html": "<ol class=\"ds-rows\"><li class=\"ds-row\"><span class=\"ds-row__tick\">Mes 1</span><h3>Menos hambre, sin pelear contigo</h3><p>El GLP-1 actúa sobre las señales de saciedad: comes menos porque tu cuerpo lo pide menos.</p></li><li class=\"ds-row\"><span class=\"ds-row__tick\">Mes 3</span><h3>Mejora metabólica, no solo la báscula</h3><p>Glucosa, presión y marcadores inflamatorios suelen mejorar junto con el peso.</p></li></ol>",
+      "css": ".ds-rows { list-style: none; margin: 0; padding: 0; max-width: 36rem; border-top: 1px solid color-mix(in oklab, #5b7b84 55%, transparent); color: var(--ink-900, #1c2426); font-family: var(--font-body, Onest, sans-serif); line-height: 1.55; } .ds-row { display: grid; grid-template-columns: 5.5rem 1fr; grid-template-rows: auto auto; column-gap: 1rem; padding: 1.5rem 0; border-bottom: 1px solid color-mix(in oklab, #5b7b84 28%, transparent); } .ds-row__tick { grid-row: 1 / 3; padding-top: 0.35em; font-family: var(--font-display, 'Bricolage Grotesque', sans-serif); font-weight: 700; font-size: 0.875rem; color: var(--brand-teal, #5b7b84); font-variant-numeric: tabular-nums; } .ds-row h3 { margin: 0; font-family: var(--font-display, 'Bricolage Grotesque', sans-serif); font-weight: 600; font-size: clamp(1.25rem, 1.05rem + 0.8vw, 1.6rem); line-height: 1.15; letter-spacing: -0.015em; } .ds-row p { margin: 0.5rem 0 0; color: var(--ink-500, #4e6668); max-width: 52ch; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "La gráfica de evolución clínica",
+    "overview": "La página es una sola curva de peso que baja del mes 0 al mes 12+, y cada sección es una anotación clavada en un mes de esa curva. El mundo se construye sobre un campo slate-teal profundo (derivado del teal de los logotipos y llevado a más oscuridad) que ocupa más del 40 % de la superficie; las secciones densas (beneficios, paquetes, pasos, clínicas, FAQ) se leen sobre campo claro o papel blanco. Sobre el campo oscuro, un trazo blanco de 3.5 px se dibuja con easing balístico y arrastra consigo la retícula de meses, el área bajo la curva y los hitos; sobre el campo claro, la curva reaparece en miniatura como `MonthPin` junto a cada título.\n\nEl tono es clínico sin frialdad: ninguna foto de stock ni fila de tarjetas icono+título+texto; el dato dramatizado (porcentajes, meses, precio) sustituye a la imagen. Hay un solo acento cálido, el dorado del hito, que marca las promociones y la curva de reganancia; el verde de WhatsApp es la única otra voz y pertenece exclusivamente al CTA. Los iconos son un trazo propio de 1.75 con remates redondos, el mismo lenguaje que la línea de ECG del isotipo.\n\nRechazos confirmados por el contrato y verificados en la construcción: sin hero de foto sonriente, sin tarjetas icono+título+texto, sin kickers tipográficos sobre los títulos (la anotación de mes vive al lado del título, nunca encima), sin grises neutros sobre el campo (la tinta muted se deriva siempre del campo teal).",
+    "keyCharacteristics": [
+      "Campo slate-teal (#223b41 → #16292d) como superficie dominante; lectura en #eef3f2 y papel blanco.",
+      "Una curva blanca de 3.5 px con retícula hairline; la misma curva en miniatura (`MonthPin`) hila todas las secciones.",
+      "Un acento dorado (#d7b56a) con una función: el hito (promoción o reganancia).",
+      "Verde WhatsApp solo en el CTA; píldora con sombra con offset y brillo que recorre al hover.",
+      "Bricolage Grotesque 800 con tracking −0.03em para el titular; Onest para el cuerpo; cifras tabulares siempre.",
+      "Movimiento balístico (quint-out), revelado con blur, y respeto estricto a `prefers-reduced-motion`."
+    ],
+    "rules": [
+      { "name": "La regla de la tinta derivada", "body": "Ningún gris neutro sobre el campo: todo texto, línea o icono secundario es un paso de la escala `field-*` o `ink-*`. `.on-field` redefine `--fg`, `--fg-muted`, `--line` y `--line-strong`; los componentes consumen las variables semánticas, no los pasos crudos.", "section": "colors" },
+      { "name": "La regla del hito", "body": "El dorado marca algo que sucede en un mes de la curva (promoción, separación, reganancia). No es color de título, de icono ni de fondo de sección.", "section": "colors" },
+      { "name": "La regla de la única voz verde", "body": "El verde WhatsApp solo existe en `WaButton`. Ningún otro elemento lo toma prestado, ni siquiera un icono de teléfono.", "section": "colors" },
+      { "name": "La regla de la cifra tabular", "body": "Toda cifra que pueda cambiar (precio, porcentaje, mes, hora) lleva `.num`; los números del display se alinean como en una tabla clínica.", "section": "typography" },
+      { "name": "La regla del display que se reapila", "body": "El titular no reduce su clamp en móvil: cambia a una columna y conserva `clamp(2.4rem, …, 4.6rem)`. Encoger el display para que quepa es un defecto.", "section": "typography" },
+      { "name": "La regla de la anotación al lado", "body": "El mes se anota a la derecha del `h2` en `.sec-head` (flex, alineado al pie, con `.pin` a `padding-bottom: 0.35em`), nunca como una línea pequeña encima del título.", "section": "typography" },
+      { "name": "La regla de la sombra tintada", "body": "Toda sombra lleva offset vertical, blur y el color del campo (`16, 29, 45` o `18, 140, 94`). Sin sombras duras, sin sombras negras, sin sombras sin offset.", "section": "elevation" },
+      { "name": "La regla del campo por tono", "body": "Las secciones no se separan con sombras ni bordes gruesos: se separan cambiando el paso del campo (`field-900` / `field-800` / `field-700` / `field-050` / papel) y, como mucho, un `border-top: 1px solid var(--line)`.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do colocar toda sección oscura bajo `.on-field` y consumir `--fg`, `--fg-muted`, `--line`, `--line-strong`; nunca un paso `ink-*` sobre el campo.",
+      "Do anotar el mes de cada sección con `MonthPin` a la derecha del `h2` dentro de `.sec-head`.",
+      "Do usar `.num` en cualquier cifra (precio, porcentaje, mes, hora) y el display 800 con tracking −0.04em para la cifra protagonista.",
+      "Do reservar `mark-500` para hitos de la curva (promociones y reganancia) y las superficies del navegador (`::selection`, `:focus-visible`, skip link).",
+      "Do usar píldora (999px) para todo botón y chip, y 20px para toda tarjeta de contenido.",
+      "Do tintar cada sombra con `rgba(22, 41, 45, …)` y darle offset y blur; `--shadow-wa` solo para el CTA.",
+      "Do mover lo que se desplaza con `--ease-ballistic` y lo que cambia de color u opacidad con `--ease-out`; mantener el revelado dependiente de `.js` y anulado en `prefers-reduced-motion`.",
+      "Do presentar listas de datos (beneficios, pasos, equipo, FAQ) como filas con separadores `--line`/`--line-strong`, no como tarjetas."
+    ],
+    "donts": [
+      "Don't usar kickers o eyebrows (línea pequeña en mayúsculas o color encima de un título); la única anotación admitida es el mes, al lado.",
+      "Don't construir filas de tarjetas icono+título+texto; los iconos de trazo acompañan texto en línea (`hero__facts`, `team__name`, `clinic__addr`), no encabezan tarjetas.",
+      "Don't introducir grises neutros (`#888`, `#ccc`, `gray-*`); toda tinta secundaria es un paso de `field-*` o `ink-*`.",
+      "Don't usar el verde WhatsApp fuera de `WaButton` ni el dorado como color de título, icono o fondo de sección.",
+      "Don't reducir el clamp del display en móvil; el titular se reapila en una columna a su tamaño.",
+      "Don't usar sombras negras, duras o sin offset, ni separar secciones con sombras: el campo cambia de paso.",
+      "Don't sustituir `IconGlyph` por un paquete de iconos ni por glifos de sistema; cualquier icono nuevo se dibuja en el mismo trazo 1.75 con remates redondos.",
+      "Don't mostrar la curva sin su `figcaption` «ilustrativa»; ninguna cifra de resultado propia se dramatiza en ella."
+    ]
+  }
+}
