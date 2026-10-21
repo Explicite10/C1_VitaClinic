@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     public: {
       siteUrl,
       whatsapp: '525565356274',
-      whatsappDisplay: '55 6535 6274',
+      whatsappDisplay: '+52 5565356274',
       whatsappMessage: 'Hola, quiero saber si soy candidato al tratamiento GLP-1 de VitaClinic.',
     },
   },

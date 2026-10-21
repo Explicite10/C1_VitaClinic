@@ -69,7 +69,7 @@ const jsonLd = {
       contactPoint: {
         '@type': 'ContactPoint',
         contactType: 'customer service',
-        telephone: '+52 55 6535 6274',
+        telephone: '+525565356274',
         url: waHref,
         availableLanguage: 'es',
       },

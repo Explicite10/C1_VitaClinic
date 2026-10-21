@@ -4,7 +4,7 @@ export const brand = {
   phone: '55 1012 1154',
   phoneHref: 'tel:+525510121154',
   whatsappNumber: '525565356274',
-  whatsappDisplay: '55 6535 6274',
+  whatsappDisplay: '+52 5565356274',
   ctaLabel: 'Quiero saber si soy candidato',
   instagram: 'https://www.instagram.com/vitaclinic_cdmx',
 }

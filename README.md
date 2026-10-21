@@ -22,7 +22,7 @@ Define `NUXT_PUBLIC_SITE_URL=https://tu-dominio.com` al generar para que canonic
 | `app/components/Section*.vue` | Secciones: Hero, Promos, Benefits (tratamiento), Plans (paquetes y precio), FollowUp (seguimiento), Steps (cómo funciona), Clinics, Faq, Close |
 | `app/components/WeightCurve.vue` | La curva ilustrativa (SVG) que estructura la página: dibujo animado, hitos, comparación con/sin seguimiento, tooltip por mes |
 | `app/components/MonthPin.vue` | Anotación de mes junto a cada título: el hilo que une las secciones con la curva |
-| `app/components/WaButton.vue` | Botón a WhatsApp (55 6535 6274) con texto «Quiero saber si soy candidato» |
+| `app/components/WaButton.vue` | Botón a WhatsApp (+52 5565356274) con texto «Quiero saber si soy candidato» |
 | `app/data/clinic.ts` | Marca, promociones, clínicas (direcciones, horarios, mapas), duraciones (paquetes), precio |
 | `app/data/faq.ts` | Preguntas frecuentes (también alimentan el FAQPage JSON‑LD) |
 | `app/assets/css/tokens.css` | Tokens de diseño (paleta derivada de los logos, tipografía, espacio, movimiento) |
