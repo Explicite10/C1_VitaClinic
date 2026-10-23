@@ -126,6 +126,34 @@ const team: { role: Role; name: string; text: string }[] = [
   letter-spacing: var(--track-tight);
   text-wrap: balance;
 }
+/* Solo celular: todo centrado */
+@media (max-width: 639px) {
+  .team .sec-head {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .team .sec-head h2 {
+    margin-inline: auto;
+  }
+  .team__facts {
+    justify-content: center;
+  }
+  .member {
+    justify-items: center;
+    text-align: center;
+  }
+  .member p {
+    margin-inline: auto;
+  }
+  .team__end {
+    justify-items: center;
+    text-align: center;
+  }
+  .team__end p {
+    margin-inline: auto;
+  }
+}
 @media (min-width: 640px) {
   .team__grid {
     grid-template-columns: repeat(2, 1fr);
