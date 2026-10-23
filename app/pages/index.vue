@@ -6,7 +6,7 @@ const config = useRuntimeConfig().public
 const siteUrl = config.siteUrl
 const title = 'Tratamiento GLP‑1 para bajar de peso en CDMX | VitaClinic'
 const description =
-  'Baja de peso con GLP‑1 (semaglutida o tirzepatida) y seguimiento médico, nutricional y psicológico. Planes de 3, 5, 7 meses o más de 1 año, desde $4,500 MXN. 10% OFF primera consulta. Clínicas en Centro y WTC, CDMX.'
+  'Baja de peso con GLP‑1 (semaglutida o tirzepatida) con valoración médica, nutrición clínica y acompañamiento psicológico presencial. Paquetes de 3, 5, 7 meses o más de 1 año desde $3,499 MXN. Clínicas en Centro y WTC, CDMX.'
 
 useSeoMeta({
   title,
@@ -69,7 +69,7 @@ const jsonLd = {
       contactPoint: {
         '@type': 'ContactPoint',
         contactType: 'customer service',
-        telephone: '+525565356274',
+        telephone: '+525510121154',
         url: waHref,
         availableLanguage: 'es',
       },
@@ -136,6 +136,7 @@ useReveal()
       <SectionFollowUp />
       <SectionSteps />
       <SectionClinics />
+      <SectionTeam />
       <SectionFaq />
       <SectionClose />
     </main>

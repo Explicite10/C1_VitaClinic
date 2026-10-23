@@ -7,13 +7,13 @@ const team: { icon: IconName; name: string; does: string; when: string }[] = [
     icon: 'stethoscope',
     name: 'Seguimiento médico',
     does: 'Valora si eres candidato, elige el medicamento, ajusta la dosis y vigila efectos secundarios y laboratorios.',
-    when: 'Mes 0 y cada control',
+    when: 'Durante todo el tratamiento',
   },
   {
     icon: 'nutrition',
     name: 'Seguimiento nutricional',
     does: 'Diseña un plan de alimentación realista para tu rutina y protege tu masa muscular mientras bajas de peso.',
-    when: 'Desde la semana 1',
+    when: 'Durante todo el tratamiento',
   },
   {
     icon: 'mind',

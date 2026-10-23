@@ -3,26 +3,19 @@ export const brand = {
   tagline: 'Clínica Metabólica y Estética',
   phone: '55 1012 1154',
   phoneHref: 'tel:+525510121154',
-  whatsappNumber: '525565356274',
-  whatsappDisplay: '+52 5565356274',
+  whatsappNumber: '525510121154',
+  whatsappDisplay: '+52 5510121154',
   ctaLabel: 'Quiero saber si soy candidato',
   instagram: 'https://www.instagram.com/vitaclinic_cdmx',
 }
 
 export const promos = [
   {
-    id: 'primera-consulta',
-    pct: 10,
-    title: '10% OFF en tu primera consulta',
-    detail: 'Valoración médica inicial con descuento para que conozcas tu plan sin compromiso.',
-    condition: 'Menciona la promoción al agendar por WhatsApp.',
-  },
-  {
     id: 'tres-meses',
     pct: 15,
-    title: '15% OFF al pagar 3 meses de contado',
+    title: '15% OFF al pagar 3 meses de tratamiento de contado',
     detail: 'Liquida tres meses de tratamiento en un solo pago y ahorra el 15% del total.',
-    condition: 'Aplica sobre el plan personalizado de 3 meses o más.',
+    condition: 'Aplica sobre el paquete personalizado de 3 meses o más. Menciona la promoción al agendar.',
   },
 ] as const
 
@@ -67,8 +60,12 @@ export const durations = [
 ] as const
 
 export const pricing = {
-  from: 4500,
+  from: 3499,
   currency: 'MXN',
+  meds: [
+    { name: 'Semaglutida', from: 3499 },
+    { name: 'Tirzepatida', from: 4499 },
+  ],
   note: 'Tratamiento 100% personalizado. El costo final depende de tu plan, duración y medicamento indicado.',
 }
 

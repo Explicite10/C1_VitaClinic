@@ -17,8 +17,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteUrl,
-      whatsapp: '525565356274',
-      whatsappDisplay: '+52 5565356274',
+      whatsapp: '525510121154',
+      whatsappDisplay: '+52 5510121154',
       whatsappMessage: 'Hola, quiero saber si soy candidato al tratamiento GLP-1 de VitaClinic.',
     },
   },

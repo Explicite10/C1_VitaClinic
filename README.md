@@ -22,7 +22,7 @@ Define `NUXT_PUBLIC_SITE_URL=https://tu-dominio.com` al generar para que canonic
 | `app/components/Section*.vue` | Secciones: Hero, Promos, Benefits (tratamiento), Plans (paquetes y precio), FollowUp (seguimiento), Steps (cómo funciona), Clinics, Faq, Close |
 | `app/components/WeightCurve.vue` | La curva ilustrativa (SVG) que estructura la página: dibujo animado, hitos, comparación con/sin seguimiento, tooltip por mes |
 | `app/components/MonthPin.vue` | Anotación de mes junto a cada título: el hilo que une las secciones con la curva |
-| `app/components/WaButton.vue` | Botón a WhatsApp (+52 5565356274) con texto «Quiero saber si soy candidato» |
+| `app/components/WaButton.vue` | Botón a WhatsApp (+52 5510121154) con texto «Quiero saber si soy candidato» |
 | `app/data/clinic.ts` | Marca, promociones, clínicas (direcciones, horarios, mapas), duraciones (paquetes), precio |
 | `app/data/faq.ts` | Preguntas frecuentes (también alimentan el FAQPage JSON‑LD) |
 | `app/assets/css/tokens.css` | Tokens de diseño (paleta derivada de los logos, tipografía, espacio, movimiento) |
@@ -32,7 +32,8 @@ Define `NUXT_PUBLIC_SITE_URL=https://tu-dominio.com` al generar para que canonic
 
 - **Vigencia de promociones**: hoy dice «por tiempo limitado» sin fecha. Edita `promos` en `app/data/clinic.ts`.
 - **Sin testimonios ni perfiles de doctores** por indicación del cliente (2026-10-20). La landing es informativa y promocional: tratamiento, paquetes, consultorios.
-- **Paquetes**: 3, 5, 7 meses y más de 1 año, con «cotización personalizada». Si el cliente define precios por paquete, van en `durations` de `app/data/clinic.ts`.
+- **Paquetes**: 3, 5, 7 meses y más de 1 año, con «cotización personalizada». Precio base por medicamento en `pricing.meds` de `app/data/clinic.ts` (semaglutida $3,499, tirzepatida $4,499).
+- **Equipo** (`SectionTeam.vue`): las figuras son ilustraciones SVG propias (`TeamFigure.vue`), no personas reales. Cuando haya fotos reales del equipo en clínica, sustitúyelas ahí.
 - **Curva de peso**: es ilustrativa y está etiquetada así en pantalla. No representa datos de pacientes.
 - **Imagen OG** (`public/og.png`): captura del hero. Regénerala si cambias el titular.
 

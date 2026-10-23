@@ -2,9 +2,8 @@
 import type { Milestone } from '~/utils/curve'
 
 const milestones: Milestone[] = [
-  { m: 0, label: '10% OFF', sub: 'Primera consulta', tone: 'mark', place: 'e' },
-  { m: 3, label: '15% OFF', sub: '3 meses de contado', tone: 'mark', place: 'ne' },
-  { m: 12, label: 'Menos reganancia', sub: 'Mantenimiento guiado', tone: 'plain', place: 'n' },
+  { m: 0, label: 'Inicio', sub: 'Tu peso de partida', tone: 'plain', place: 'e' },
+  { m: 12, label: 'Hasta −25%', sub: 'de tu peso inicial', tone: 'mark', place: 'n' },
 ]
 </script>
 
@@ -16,13 +15,13 @@ const milestones: Milestone[] = [
           Baja de peso con GLP‑1 <span class="hero__title-soft">y un equipo que te acompaña</span>
         </h1>
         <p class="hero__lead" data-reveal>
-          Tratamiento médico con semaglutida o tirzepatida, seguimiento médico, nutricional y psicológico y paquetes
-          de 3, 5, 7 meses o más de un año. Desde $4,500 MXN, en dos clínicas de la Ciudad de México.
+          Nuestro programa combina valoración médica, nutrición clínica y acompañamiento psicológico, para ayudarte a
+          mejorar tu salud, desarrollar hábitos sostenibles y avanzar hacia tus objetivos de forma personalizada.
         </p>
         <div class="hero__actions" data-reveal>
           <WaButton size="lg" />
           <a href="#paquetes" class="hero__secondary">
-            Desde <strong class="num">$4,500 MXN</strong>
+            Desde <strong class="num">$3,499 MXN</strong>
             <IconGlyph name="chevron" :size="16" />
           </a>
         </div>
@@ -30,11 +29,14 @@ const milestones: Milestone[] = [
           <li><IconGlyph name="stethoscope" :size="18" /> Médico</li>
           <li><IconGlyph name="nutrition" :size="18" /> Nutrición</li>
           <li><IconGlyph name="mind" :size="18" /> Psicología</li>
+          <li><IconGlyph name="pen" :size="18" /> Enfermería</li>
+          <li><IconGlyph name="pin" :size="18" /> Presencial</li>
         </ul>
       </div>
 
       <div class="hero__chart">
-        <WeightCurve :milestones="milestones" autoplay :duration="3000" caption="Curva ilustrativa del acompañamiento mes a mes. Los resultados varían según cada paciente." />
+        <p class="hero__claim" data-reveal>Puedes perder <strong>hasta un 25%</strong> de tu peso</p>
+        <WeightCurve :milestones="milestones" autoplay :duration="3000" caption="Los resultados dependen del medicamento, dosis, tiempo de tratamiento y características individuales." />
       </div>
     </div>
   </section>
@@ -112,6 +114,17 @@ const milestones: Milestone[] = [
 }
 .hero__facts svg {
   color: var(--field-300);
+}
+.hero__claim {
+  margin-bottom: var(--space-3);
+  font-family: var(--font-display);
+  font-size: var(--fs-h3);
+  font-weight: 500;
+  color: var(--field-100);
+}
+.hero__claim strong {
+  font-weight: 800;
+  color: var(--mark-500);
 }
 .hero__chart {
   --curve-ink: var(--field-050);

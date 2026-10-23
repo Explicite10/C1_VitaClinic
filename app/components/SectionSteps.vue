@@ -6,14 +6,14 @@ const steps = [
     text: 'Cuéntanos tu caso en un mensaje. Te decimos qué necesitas para tu primera consulta y agendamos en la clínica que te quede más cerca.',
   },
   {
-    when: 'Primera consulta · 10% OFF',
+    when: 'Presencial en clínica',
     title: 'Valoración médica',
     text: 'Historia clínica, mediciones y estudios. El médico confirma si eres candidato y elige el medicamento y la dosis inicial.',
   },
   {
     when: 'Semana 1',
     title: 'Arrancas tu plan',
-    text: 'Recibes tu medicamento GLP‑1, tu plan de alimentación y la primera aplicación guiada. Una dosis a la semana.',
+    text: 'Inicias tu medicamento GLP‑1 con aplicación presencial y programamos tus citas con nutrición y psicología. Una dosis a la semana.',
   },
   {
     when: 'Cada mes',

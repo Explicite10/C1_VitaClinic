@@ -1,18 +1,18 @@
 <script setup lang="ts">
 import { durations, pricing, promos } from '~/data/clinic'
 
-const priceEl = ref<HTMLElement | null>(null)
-const price = useCountUp(priceEl, pricing.from, {
-  duration: 1600,
-  format: (n) => `$${Math.round(n).toLocaleString('es-MX')}`,
-})
+const fmt = (n: number) => `$${Math.round(n).toLocaleString('es-MX')}`
+const semaEl = ref<HTMLElement | null>(null)
+const tirzEl = ref<HTMLElement | null>(null)
+const sema = useCountUp(semaEl, pricing.meds[0].from, { duration: 1600, format: fmt })
+const tirz = useCountUp(tirzEl, pricing.meds[1].from, { duration: 1600, format: fmt, delay: 150 })
 
 const includes = [
-  'Valoración médica inicial y receta',
-  'Medicamento GLP‑1 original indicado para ti',
-  'Controles médicos durante el tratamiento',
-  'Plan de alimentación personalizado',
+  'Valoración y seguimiento médico',
+  '4 dosis de medicamento GLP‑1 aplicadas por nuestro personal de forma presencial',
+  'Plan de alimentación y seguimiento nutricional',
   'Acompañamiento psicológico',
+  'Atención continua',
   'Plan de mantenimiento al concluir',
 ]
 
@@ -31,10 +31,23 @@ const active = ref(0)
         contigo según tu meta y cómo respondes al tratamiento.
       </p>
 
-      <div class="plans__price" data-reveal>
-        <span class="plans__from">Desde</span>
-        <strong ref="priceEl" class="plans__amount num">{{ price }}</strong>
-        <span class="plans__cur">MXN</span>
+      <div class="prices" data-reveal>
+        <div class="price">
+          <span class="price__med">{{ pricing.meds[0].name }}</span>
+          <span class="price__row">
+            <span class="plans__from">Desde</span>
+            <strong ref="semaEl" class="plans__amount num">{{ sema }}</strong>
+            <span class="plans__cur">MXN</span>
+          </span>
+        </div>
+        <div class="price">
+          <span class="price__med">{{ pricing.meds[1].name }}</span>
+          <span class="price__row">
+            <span class="plans__from">Desde</span>
+            <strong ref="tirzEl" class="plans__amount num">{{ tirz }}</strong>
+            <span class="plans__cur">MXN</span>
+          </span>
+        </div>
         <span class="plans__tag">100% personalizado</span>
       </div>
 
@@ -47,7 +60,7 @@ const active = ref(0)
           @pointerenter="active = i"
           @click="active = i"
         >
-          <span v-if="d.months === 3" class="plan__promo num">{{ promos[1].pct }}% OFF de contado</span>
+          <span v-if="d.months === 3" class="plan__promo num">{{ promos[0].pct }}% OFF de contado</span>
           <strong class="plan__months num">{{ d.label }}</strong>
           <span class="plan__who">{{ d.who }}</span>
           <span class="plan__price">Cotización personalizada</span>
@@ -82,13 +95,38 @@ const active = ref(0)
   font-size: var(--fs-lead);
   color: var(--fg-muted);
 }
-.plans__price {
+.prices {
   margin-top: var(--space-6);
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--space-5) var(--space-7);
+  font-family: var(--font-display);
+}
+.price {
+  display: grid;
+  gap: var(--space-1);
+}
+.price + .price {
+  padding-left: var(--space-7);
+  border-left: 1px solid var(--line-strong);
+}
+.price__med {
+  font-size: var(--fs-small);
+  font-weight: 700;
+  color: var(--brand-teal);
+  letter-spacing: 0.01em;
+}
+.price__row {
+  display: flex;
   align-items: baseline;
   gap: 0.2em 0.45em;
-  font-family: var(--font-display);
+}
+@media (max-width: 560px) {
+  .price + .price {
+    padding-left: 0;
+    border-left: 0;
+  }
 }
 .plans__from {
   font-size: var(--fs-lead);
@@ -106,7 +144,7 @@ const active = ref(0)
   color: var(--field-700);
 }
 .plans__tag {
-  margin-left: var(--space-3);
+  margin-bottom: 0.6em;
   padding: 0.35em 0.8em;
   border-radius: var(--radius-pill);
   background: var(--field-700);

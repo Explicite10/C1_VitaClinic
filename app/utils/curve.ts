@@ -9,12 +9,12 @@ export const PAD_TOP = 64
 export const PAD_BOTTOM = 84
 export const MAX_M = 13 // 0 … 12+ meses
 
-const TOP_W = 79
+const TOP_W = 72
 const BOTTOM_W = 101
 
 /** Con seguimiento: pérdida sostenida que se estabiliza. */
 export function weightAt(m: number): number {
-  return 100 - 18 * (1 - Math.exp(-m / 3.4))
+  return 100 - 26 * (1 - Math.exp(-m / 3.6))
 }
 
 /** Sin seguimiento: misma caída inicial, reganancia después del mes 5. */

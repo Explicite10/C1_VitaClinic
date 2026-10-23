@@ -20,7 +20,7 @@ Tratamiento GLP-1 con seguimiento completo: médico, nutricional y psicológico,
 
 ## Operating Context
 - Dos clínicas en CDMX, una de ellas en el World Trade Center (WTC). Direcciones y horarios: ver Evidence.
-- Contacto principal: WhatsApp 55 6535 6274.
+- Contacto principal: WhatsApp +52 5510121154 (corregido por el cliente 2026-10-22; antes 55 6535 6274).
 - Inspiración declarada por el usuario: clivimexico.com.mx (landing de tratamiento de control de peso).
 
 ## Capabilities and Constraints
@@ -32,7 +32,7 @@ Requisitos pinned por el brief (todos deben aparecer):
 - Seguimiento completo: médico, nutricional y psicológico → mejores resultados y menos reganancia de peso.
 - Duración acorde al paciente: 3, 5, 7 meses o más de 1 año.
 - Sección de costo: a partir de $4,500 MXN, 100% personalizado.
-- Botón a WhatsApp 55 6535 6274 con texto exacto “Quiero saber si soy candidato”.
+- Botón a WhatsApp +52 5510121154 con texto exacto “Quiero saber si soy candidato”.
 - Ubicación de las 2 clínicas con horario.
 - Totalmente responsivo, moderno, con buenas animaciones.
 Undecided: fecha de vigencia de las promociones (usar "por tiempo limitado" sin fecha hasta que el usuario la dé).
@@ -40,6 +40,7 @@ Undecided: fecha de vigencia de las promociones (usar "por tiempo limitado" sin 
 ## Client Direction (2026-10-20, relayed by the user)
 - Basarse más en la referencia Clivi: landing informativa y promocional del tratamiento GLP-1, con paquetes y consultorios; después el paciente agenda cita.
 - No incluir testimonios ni perfiles de doctores.
+- Correcciones del cliente (2026-10-22): precios desde $3,499 MXN (semaglutida) y $4,499 MXN (tirzepatida); se elimina la promo de 10% en primera consulta (queda solo 15% al pagar 3 meses de contado); la gráfica comunica "hasta un 25% de peso" con la leyenda "Los resultados dependen del medicamento, dosis, tiempo de tratamiento y características individuales."; el paquete incluye 4 dosis aplicadas presencialmente por el personal; el servicio es 100% presencial (diferenciador frente a competencia online) y el equipo incluye médico, nutrición, psicología y enfermería.
 
 ## Brand Commitments
 - Nombre: VitaClinic. Tagline: "Clínica Metabólica y Estética".

@@ -17,6 +17,6 @@ export const faqs = [
   },
   {
     q: '¿Cuánto cuesta y cómo aplican las promociones?',
-    a: 'El tratamiento es 100% personalizado y parte de $4,500 MXN. Por tiempo limitado: 10% de descuento en la primera consulta y 15% de descuento al pagar tres meses de tratamiento de contado. Menciona la promoción al agendar.',
+    a: 'El tratamiento es 100% personalizado: desde $3,499 MXN con semaglutida y desde $4,499 MXN con tirzepatida. Por tiempo limitado, 15% de descuento al pagar tres meses de tratamiento de contado. Menciona la promoción al agendar.',
   },
 ] as const

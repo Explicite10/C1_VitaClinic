@@ -8,8 +8,8 @@ import { brand } from '~/data/clinic'
       <img src="/brand/heart.svg" alt="" width="640" height="584" class="close__heart" />
       <h2 id="close-title" data-reveal>Empieza tu curva hoy</h2>
       <p>
-        Cuéntanos tu caso por WhatsApp. Te decimos si eres candidato, qué incluye tu plan y agendamos tu primera
-        consulta con 10% de descuento.
+        Cuéntanos tu caso por WhatsApp. Te decimos si eres candidato, qué incluye tu paquete y agendamos tu
+        valoración presencial en la clínica que prefieras.
       </p>
       <div class="close__actions">
         <WaButton size="lg" />
