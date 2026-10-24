@@ -5,6 +5,12 @@ const milestones: Milestone[] = [
   { m: 0, label: 'Inicio', sub: 'Tu peso de partida', tone: 'plain', place: 'e' },
   { m: 12, label: 'Hasta −25%', sub: 'de tu peso inicial', tone: 'mark', place: 'n' },
 ]
+
+const people = [
+  { src: '/team/psicologa.webp', role: 'Psicología', cls: 'p--left' },
+  { src: '/team/medico.webp', role: 'Médico', cls: 'p--center' },
+  { src: '/team/nutriologa.webp', role: 'Nutrición', cls: 'p--right' },
+]
 </script>
 
 <template>
@@ -14,16 +20,17 @@ const milestones: Milestone[] = [
         <h1 class="hero__title" data-reveal>
           Baja de peso con GLP‑1 <span class="hero__title-soft">y un equipo que te acompaña</span>
         </h1>
+        <a href="#paquetes" class="hero__price" data-reveal>
+          <span>Desde</span>
+          <strong class="num">$3,499</strong>
+          <span>MXN</span>
+        </a>
         <p class="hero__lead" data-reveal>
           Nuestro programa combina valoración médica, nutrición clínica y acompañamiento psicológico, para ayudarte a
           mejorar tu salud, desarrollar hábitos sostenibles y avanzar hacia tus objetivos de forma personalizada.
         </p>
         <div class="hero__actions" data-reveal>
           <WaButton size="lg" />
-          <a href="#paquetes" class="hero__secondary">
-            Desde <strong class="num">$3,499 MXN</strong>
-            <IconGlyph name="chevron" :size="16" />
-          </a>
         </div>
         <ul class="hero__facts" role="list">
           <li><IconGlyph name="stethoscope" :size="18" /> Médico</li>
@@ -34,10 +41,21 @@ const milestones: Milestone[] = [
         </ul>
       </div>
 
-      <div class="hero__chart">
-        <p class="hero__claim" data-reveal>Puedes perder <strong>hasta un 25%</strong> de tu peso</p>
-        <WeightCurve :milestones="milestones" autoplay :duration="3000" caption="Los resultados dependen del medicamento, dosis, tiempo de tratamiento y características individuales." />
+      <div class="hero__people" aria-label="Equipo de médico, psicología y nutrición">
+        <figure v-for="p in people" :key="p.role" class="person" :class="p.cls">
+          <img :src="p.src" :alt="`Especialista de ${p.role.toLowerCase()}`" width="800" height="1100" />
+          <figcaption>{{ p.role }}</figcaption>
+        </figure>
       </div>
+    </div>
+
+    <div class="container hero__chart">
+      <p class="hero__claim" data-reveal>Puedes perder <strong>hasta un 25%</strong> de tu peso</p>
+      <WeightCurve
+        :milestones="milestones"
+        :duration="3000"
+        caption="Los resultados dependen del medicamento, dosis, tiempo de tratamiento y características individuales."
+      />
     </div>
   </section>
 </template>
@@ -46,7 +64,7 @@ const milestones: Milestone[] = [
 .hero {
   position: relative;
   overflow: hidden;
-  padding-block: clamp(2.5rem, 2rem + 4vw, 6rem) clamp(3rem, 2rem + 5vw, 7rem);
+  padding-block: clamp(2.5rem, 2rem + 4vw, 5rem) clamp(3rem, 2rem + 5vw, 6rem);
   background:
     radial-gradient(120% 90% at 85% 10%, color-mix(in oklab, var(--field-500) 55%, transparent) 0%, transparent 60%),
     linear-gradient(180deg, var(--field-800) 0%, var(--field-700) 55%, var(--field-800) 100%);
@@ -54,7 +72,7 @@ const milestones: Milestone[] = [
 .hero__grid {
   position: relative;
   display: grid;
-  gap: clamp(2rem, 1rem + 4vw, 4rem);
+  gap: clamp(2rem, 1rem + 4vw, 3.5rem);
   align-items: center;
 }
 .hero__title {
@@ -65,9 +83,30 @@ const milestones: Milestone[] = [
   color: var(--field-200);
   font-weight: 500;
 }
+.hero__price {
+  margin-top: var(--space-5);
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35em;
+  text-decoration: none;
+  font-family: var(--font-display);
+  color: var(--field-050);
+}
+.hero__price span {
+  font-size: clamp(1.1rem, 1rem + 0.6vw, 1.5rem);
+  font-weight: 600;
+  color: var(--field-200);
+}
+.hero__price strong {
+  font-size: clamp(2.6rem, 1.4rem + 5vw, 4.75rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  color: var(--mark-500);
+}
 .hero__lead {
   margin-top: var(--space-5);
-  max-width: 44ch;
+  max-width: 46ch;
   font-size: var(--fs-lead);
   color: var(--field-100);
 }
@@ -78,26 +117,6 @@ const milestones: Milestone[] = [
   align-items: center;
   gap: var(--space-4) var(--space-5);
 }
-.hero__secondary {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4em;
-  text-decoration: none;
-  color: var(--field-100);
-  font-size: var(--fs-small);
-}
-.hero__secondary strong {
-  font-family: var(--font-display);
-  font-size: 1.1em;
-  color: var(--field-050);
-}
-.hero__secondary svg {
-  transform: rotate(-90deg);
-  transition: transform var(--dur-base) var(--ease-ballistic);
-}
-.hero__secondary:hover svg {
-  transform: rotate(-90deg) translateY(3px);
-}
 .hero__facts {
   margin-top: var(--space-6);
   display: flex;
@@ -105,7 +124,7 @@ const milestones: Milestone[] = [
   gap: var(--space-3) var(--space-5);
   font-size: var(--fs-small);
   font-weight: 500;
-  color: var(--field-200);
+  color: var(--field-100);
 }
 .hero__facts li {
   display: inline-flex;
@@ -113,10 +132,74 @@ const milestones: Milestone[] = [
   gap: 0.45em;
 }
 .hero__facts svg {
-  color: var(--field-300);
+  color: var(--field-050);
+}
+
+/* Equipo recortado */
+.hero__people {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  margin-bottom: calc(-1 * clamp(3rem, 2rem + 4vw, 5rem));
+  align-items: end;
+  min-height: 0;
+}
+.hero__people::before {
+  content: '';
+  position: absolute;
+  left: 6%;
+  right: 6%;
+  bottom: 0;
+  height: 78%;
+  border-radius: 999px 999px var(--radius-lg) var(--radius-lg);
+  background: radial-gradient(80% 70% at 50% 100%, color-mix(in oklab, var(--field-400) 60%, transparent), transparent 75%);
+}
+.person {
+  position: relative;
+  margin: 0;
+  display: grid;
+  justify-items: center;
+}
+.person img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.35));
+}
+.p--left {
+  margin-right: -24%;
+  z-index: 1;
+}
+.p--center {
+  z-index: 2;
+}
+.p--right {
+  margin-left: -24%;
+  z-index: 1;
+}
+.person figcaption {
+  position: absolute;
+  bottom: 6%;
+  padding: 0.35em 0.85em;
+  border-radius: var(--radius-pill);
+  background: var(--field-050);
+  color: var(--field-900);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-small);
+  box-shadow: var(--shadow-md);
+  white-space: nowrap;
+}
+
+.hero__chart {
+  --curve-ink: var(--field-050);
+  margin-top: clamp(3rem, 2rem + 4vw, 5rem);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--line);
+  color: var(--field-050);
 }
 .hero__claim {
-  margin-bottom: var(--space-3);
+  margin-bottom: var(--space-4);
   font-family: var(--font-display);
   font-size: var(--fs-h3);
   font-weight: 500;
@@ -126,27 +209,23 @@ const milestones: Milestone[] = [
   font-weight: 800;
   color: var(--mark-500);
 }
-.hero__chart {
-  --curve-ink: var(--field-050);
-  color: var(--field-050);
+.hero__chart :deep(.curve) {
+  max-width: 62rem;
 }
 
 @media (min-width: 900px) {
   .hero__grid {
-    grid-template-columns: minmax(0, 6fr) minmax(0, 6fr);
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
   }
   .hero__title {
     max-width: 12ch;
   }
 }
-@media (min-width: 1200px) {
-  .hero__grid {
-    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
-  }
-  .hero {
-    min-height: calc(100svh - 72px);
-    display: flex;
-    align-items: center;
+@media (max-width: 899px) {
+  .hero__people {
+    max-width: 520px;
+    width: 100%;
+    margin-inline: auto;
   }
 }
 </style>

@@ -35,7 +35,6 @@ const milestones: Milestone[] = [
     <div class="container">
       <div class="sec-head">
         <h2 id="follow-title" data-reveal>El medicamento baja el peso. El seguimiento evita que regrese.</h2>
-        <MonthPin :m="5" label="Mes 5 · donde se separan las curvas" />
       </div>
       <div class="follow__head">
         <p data-reveal>
@@ -104,7 +103,7 @@ const milestones: Milestone[] = [
   letter-spacing: -0.01em;
 }
 .team__name svg {
-  color: var(--field-300);
+  color: var(--field-050);
 }
 .team__when {
   margin-left: auto;

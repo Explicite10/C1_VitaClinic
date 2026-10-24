@@ -7,7 +7,6 @@ import { clinics, brand } from '~/data/clinic'
     <div class="container">
       <div class="sec-head">
         <h2 id="clinics-title" data-reveal>Dos clínicas en la Ciudad de México</h2>
-        <MonthPin :m="0" label="Mes 0 · tu primera consulta, presencial" />
       </div>
       <div class="clinics__head">
         <p data-reveal>Elige la que te quede más cerca. Mismo equipo, mismo plan, mismos horarios.</p>

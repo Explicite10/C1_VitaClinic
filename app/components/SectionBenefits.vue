@@ -63,7 +63,6 @@ const steps: Step[] = [
     <div class="container benefits__grid">
       <div class="benefits__intro">
         <h2 id="benefits-title" data-reveal>Tu tratamiento, paso a paso</h2>
-        <MonthPin :m="0" :to="3" label="Mes 0 – 3 · paso a paso" />
         <p data-reveal>
           Los agonistas de GLP‑1 (semaglutida, tirzepatida) son medicamentos que imitan una hormona intestinal:
           regulan el apetito y la velocidad con la que el estómago se vacía. Con supervisión médica, son hoy la

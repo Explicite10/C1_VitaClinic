@@ -42,6 +42,8 @@ Undecided: fecha de vigencia de las promociones (usar "por tiempo limitado" sin 
 - No incluir testimonios ni perfiles de doctores.
 - Correcciones del cliente (2026-10-22): precios desde $3,499 MXN (semaglutida) y $4,499 MXN (tirzepatida); se elimina la promo de 10% en primera consulta (queda solo 15% al pagar 3 meses de contado); la gráfica comunica "hasta un 25% de peso" con la leyenda "Los resultados dependen del medicamento, dosis, tiempo de tratamiento y características individuales."; el paquete incluye 4 dosis aplicadas presencialmente por el personal; el servicio es 100% presencial (diferenciador frente a competencia online) y el equipo incluye médico, nutrición, psicología y enfermería.
 
+- Correcciones del cliente (2026-10-24): se quitan la sección de promoción (15%) y los recuadros de duración 3/5/7/12+; se quitan las anotaciones «Mes…»; iconos sobre fondo oscuro en blanco; precio «Desde $3,499 MXN» grande bajo el título; fotos de personas reales (stock de Pexels, no personal real) para médico, psicóloga, nutrióloga y enfermería, con tres recortes sin fondo en el hero.
+
 ## Brand Commitments
 - Nombre: VitaClinic. Tagline: "Clínica Metabólica y Estética".
 - Logos en `public/brand/`: logo-teal.png (wordmark #4E6668 + corazón/ECG #5B7B84), logo-white.png, logo-dark.png (#2F3030), heart-teal/white/dark.png (isotipo corazón con línea de ECG).

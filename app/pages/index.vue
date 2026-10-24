@@ -130,7 +130,6 @@ useReveal()
     <SiteNav />
     <main>
       <SectionHero />
-      <SectionPromos />
       <SectionBenefits />
       <SectionPlans />
       <SectionFollowUp />

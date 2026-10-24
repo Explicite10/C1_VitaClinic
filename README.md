@@ -19,9 +19,8 @@ Define `NUXT_PUBLIC_SITE_URL=https://tu-dominio.com` al generar para que canonic
 | Ruta | Qué es |
 | --- | --- |
 | `app/pages/index.vue` | Página única: meta SEO, JSON‑LD (Organization, 2× MedicalClinic, MedicalTherapy + Offer, FAQPage) y composición de secciones |
-| `app/components/Section*.vue` | Secciones: Hero, Promos, Benefits (tratamiento), Plans (paquetes y precio), FollowUp (seguimiento), Steps (cómo funciona), Clinics, Faq, Close |
+| `app/components/Section*.vue` | Secciones: Hero (con equipo recortado y curva), Benefits (paso a paso), Plans (precios e incluye), FollowUp (seguimiento), Steps (cómo funciona), Clinics, Team (qué nos hace diferentes), Faq, Close |
 | `app/components/WeightCurve.vue` | La curva ilustrativa (SVG) que estructura la página: dibujo animado, hitos, comparación con/sin seguimiento, tooltip por mes |
-| `app/components/MonthPin.vue` | Anotación de mes junto a cada título: el hilo que une las secciones con la curva |
 | `app/components/WaButton.vue` | Botón a WhatsApp (+52 5510121154) con texto «Quiero saber si soy candidato» |
 | `app/data/clinic.ts` | Marca, promociones, clínicas (direcciones, horarios, mapas), duraciones (paquetes), precio |
 | `app/data/faq.ts` | Preguntas frecuentes (también alimentan el FAQPage JSON‑LD) |
@@ -30,10 +29,10 @@ Define `NUXT_PUBLIC_SITE_URL=https://tu-dominio.com` al generar para que canonic
 
 ## Contenido que debes revisar o reemplazar
 
-- **Vigencia de promociones**: hoy dice «por tiempo limitado» sin fecha. Edita `promos` en `app/data/clinic.ts`.
+- **Promoción 15% (3 meses de contado)**: ya no tiene sección propia; solo se menciona en preguntas frecuentes (`app/data/faq.ts`).
 - **Sin testimonios ni perfiles de doctores** por indicación del cliente (2026-10-20). La landing es informativa y promocional: tratamiento, paquetes, consultorios.
 - **Paquetes**: 3, 5, 7 meses y más de 1 año, con «cotización personalizada». Precio base por medicamento en `pricing.meds` de `app/data/clinic.ts` (semaglutida $3,499, tirzepatida $4,499).
-- **Equipo** (`SectionTeam.vue`): las figuras son ilustraciones SVG propias (`TeamFigure.vue`), no personas reales. Cuando haya fotos reales del equipo en clínica, sustitúyelas ahí.
+- **Fotos del equipo** (`public/team/`): son fotos de stock de Pexels (licencia libre, uso comercial permitido) recortadas sin fondo. No son el personal real de VitaClinic: sustitúyelas por fotos del equipo real cuando existan, con el mismo nombre de archivo. Fuentes: médico pexels.com/photo/32160037, psicóloga pexels.com/photo/7904477, nutrióloga pexels.com/photo/20002955, enfermera pexels.com/photo/27666717.
 - **Curva de peso**: es ilustrativa y está etiquetada así en pantalla. No representa datos de pacientes.
 - **Imagen OG** (`public/og.png`): captura del hero. Regénerala si cambias el titular.
 

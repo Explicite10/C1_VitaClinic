@@ -1,5 +1,11 @@
 <script setup lang="ts">
 type Role = 'medico' | 'nutricion' | 'psicologia' | 'enfermeria'
+const photo: Record<Role, string> = {
+  medico: 'medico',
+  nutricion: 'nutriologa',
+  psicologia: 'psicologa',
+  enfermeria: 'enfermera',
+}
 
 const team: { role: Role; name: string; text: string }[] = [
   {
@@ -30,7 +36,6 @@ const team: { role: Role; name: string; text: string }[] = [
     <div class="container">
       <div class="sec-head">
         <h2 id="team-title" data-reveal>¿Qué hace diferente nuestro tratamiento?</h2>
-        <MonthPin :m="0" :to="12" label="Mes 0 – 12+ · en persona" />
       </div>
       <ul class="team__facts" role="list" data-reveal>
         <li><IconGlyph name="pin" :size="18" /> 100% presencial en nuestras dos clínicas</li>
@@ -39,7 +44,9 @@ const team: { role: Role; name: string; text: string }[] = [
 
       <ul class="team__grid" role="list">
         <li v-for="t in team" :key="t.role" class="member">
-          <div class="member__fig"><TeamFigure :role="t.role" /></div>
+          <div class="member__fig">
+            <img :src="`/team/${photo[t.role]}.webp`" :alt="`Especialista de ${t.name.toLowerCase()}`" width="800" height="1100" loading="lazy" />
+          </div>
           <h3>{{ t.name }}</h3>
           <p>{{ t.text }}</p>
         </li>
@@ -82,7 +89,7 @@ const team: { role: Role; name: string; text: string }[] = [
   font-weight: 600;
 }
 .team__facts svg {
-  color: var(--field-300);
+  color: var(--field-050);
 }
 .team__grid {
   margin-top: var(--space-7);
@@ -95,8 +102,22 @@ const team: { role: Role; name: string; text: string }[] = [
   align-content: start;
 }
 .member__fig {
-  width: min(180px, 60%);
+  position: relative;
+  width: min(200px, 64%);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  background: radial-gradient(90% 90% at 50% 30%, var(--field-100), var(--field-200));
+  box-shadow: var(--shadow-md);
   transition: transform var(--dur-slow) var(--ease-ballistic);
+}
+.member__fig img {
+  position: absolute;
+  left: 50%;
+  bottom: -14%;
+  width: 92%;
+  height: auto;
+  transform: translateX(-50%);
 }
 .member:hover .member__fig {
   transform: translateY(-4px);
@@ -164,7 +185,7 @@ const team: { role: Role; name: string; text: string }[] = [
     grid-template-columns: repeat(4, 1fr);
   }
   .member__fig {
-    width: min(180px, 80%);
+    width: min(200px, 80%);
   }
 }
 </style>

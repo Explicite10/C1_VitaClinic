@@ -28,7 +28,6 @@ const steps = [
     <div class="container">
       <div class="sec-head">
         <h2 id="steps-title" data-reveal>Cómo funciona</h2>
-        <MonthPin :m="0" :to="1" label="Mes 0 – 1 · arranque" />
       </div>
       <ol class="steps__list" role="list">
         <li v-for="(s, i) in steps" :key="s.title" class="step">
