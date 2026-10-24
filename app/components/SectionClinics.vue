@@ -15,7 +15,7 @@ import { clinics, brand } from '~/data/clinic'
         <article v-for="c in clinics" :key="c.id" class="clinic">
           <div class="clinic__head on-field">
             <span class="clinic__badge">{{ c.short }}</span>
-            <img src="/brand/heart.svg" alt="" width="640" height="584" class="clinic__heart" />
+            <img src="/brand/heart-white.svg" alt="" width="640" height="584" class="clinic__heart" />
           </div>
           <div class="clinic__body">
             <h3>{{ c.name }}</h3>

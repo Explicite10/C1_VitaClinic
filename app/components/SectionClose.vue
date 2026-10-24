@@ -5,7 +5,7 @@ import { brand } from '~/data/clinic'
 <template>
   <section id="contacto" class="close on-field" aria-labelledby="close-title">
     <div class="container close__inner">
-      <img src="/brand/heart.svg" alt="" width="640" height="584" class="close__heart" />
+      <img src="/brand/heart-white.svg" alt="" width="640" height="584" class="close__heart" />
       <h2 id="close-title" data-reveal>Empieza tu curva hoy</h2>
       <p>
         Cuéntanos tu caso por WhatsApp. Te decimos si eres candidato, qué incluye tu paquete y agendamos tu
