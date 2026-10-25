@@ -114,9 +114,11 @@ const team: { role: Role; name: string; text: string }[] = [
 .member__fig img {
   position: absolute;
   left: 50%;
-  bottom: -14%;
-  width: 92%;
-  height: auto;
+  bottom: 0;
+  /* la foto completa cabe en el círculo: la cabeza queda dentro con aire arriba */
+  height: 90%;
+  width: auto;
+  max-width: none;
   transform: translateX(-50%);
 }
 .member:hover .member__fig {
