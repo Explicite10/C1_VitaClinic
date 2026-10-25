@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://vitaclinic.mx'
+const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://www.vitacliniccdmx.com'
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',

@@ -12,7 +12,7 @@ npm run preview    # previsualiza el build
 ```
 
 Despliegue: sube la carpeta `.output/public` a cualquier hosting estático (Netlify, Vercel, Hostinger, Cloudflare Pages).
-Define `NUXT_PUBLIC_SITE_URL=https://tu-dominio.com` al generar para que canonical, sitemap, robots y Open Graph apunten al dominio real.
+Dominio de producción: `https://www.vitacliniccdmx.com` (valor por defecto en `nuxt.config.ts`; el dominio sin `www` redirige a este). Para otro dominio, define `NUXT_PUBLIC_SITE_URL` al generar.
 
 ## Estructura
 
