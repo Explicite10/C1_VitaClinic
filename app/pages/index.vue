@@ -1,16 +1,18 @@
 <script setup lang="ts">
 import { brand, clinics, pricing, promos } from '~/data/clinic'
 import { faqs } from '~/data/faq'
+import { keywords, conditions } from '~/data/seo'
 
 const config = useRuntimeConfig().public
 const siteUrl = config.siteUrl
-const title = 'Tratamiento GLP‑1 para bajar de peso en CDMX | VitaClinic'
+const title = 'Clínica metabólica en CDMX: bajar de peso con GLP‑1 | VitaClinic'
 const description =
-  'Baja de peso con GLP‑1 (semaglutida o tirzepatida) con valoración médica, nutrición clínica y acompañamiento psicológico presencial. Paquetes de 3, 5, 7 meses o más de 1 año desde $3,499 MXN. Clínicas en Centro y WTC, CDMX.'
+  'Clínica metabólica en CDMX. Tratamiento médico para bajar de peso con GLP‑1 (semaglutida o tirzepatida), nutrición y psicología. Atendemos obesidad, resistencia a la insulina, diabetes, hígado graso y SOP. Desde $3,499 MXN.'
 
 useSeoMeta({
   title,
   description,
+  keywords: keywords.join(', '),
   ogTitle: title,
   ogDescription: description,
   ogImage: `${siteUrl}/og.png`,
@@ -52,6 +54,7 @@ const clinicNodes = clinics.map((c) => ({
   openingHours: c.openingHoursSpec,
   hasMap: c.mapsUrl,
   medicalSpecialty: ['Endocrinology', 'Dietetic', 'Psychiatric'],
+  knowsAbout: keywords,
   priceRange: '$$',
 }))
 
@@ -81,6 +84,11 @@ const jsonLd = {
       name: 'Tratamiento de control de peso con agonistas de GLP‑1',
       description:
         'Tratamiento médico personalizado con semaglutida o tirzepatida, con seguimiento médico, nutricional y psicológico. Duración de 3, 5, 7 meses o más de un año.',
+      healthCondition: conditions.map((c) => ({ '@type': 'MedicalCondition', name: c.name, alternateName: c.schema })),
+      drug: [
+        { '@type': 'Drug', name: 'Semaglutida', alternateName: 'GLP-1' },
+        { '@type': 'Drug', name: 'Tirzepatida', alternateName: 'GLP-1 / GIP' },
+      ],
       provider: { '@id': `${siteUrl}/#org` },
       offers: {
         '@type': 'Offer',
@@ -134,6 +142,7 @@ useReveal()
       <SectionPlans />
       <SectionFollowUp />
       <SectionSteps />
+      <SectionConditions />
       <SectionClinics />
       <SectionTeam />
       <SectionFaq />

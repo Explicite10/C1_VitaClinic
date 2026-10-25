@@ -36,6 +36,10 @@ Define `NUXT_PUBLIC_SITE_URL=https://tu-dominio.com` al generar para que canonic
 - **Curva de peso**: es ilustrativa y está etiquetada así en pantalla. No representa datos de pacientes.
 - **Imagen OG** (`public/og.png`): captura del hero. Regénerala si cambias el titular.
 
+## SEO
+
+Palabras clave del cliente en `app/data/seo.ts`. Se usan en el título y la descripción, en la etiqueta `keywords`, en el JSON‑LD (`knowsAbout`, `healthCondition`, `drug`) y como texto visible en la sección de condiciones (`SectionConditions.vue`) y en preguntas frecuentes, que es lo que realmente cuenta para Google.
+
 ## Marca
 
 Colores muestreados de los logotipos: slate‑teal `#5B7B84`, teal profundo `#4E6668`, carbón `#2F3030`. El campo oscuro de la página (`#223B41` → `#16292D`) es una extensión del teal de marca. Acento dorado `#D7B56A` reservado a promociones.

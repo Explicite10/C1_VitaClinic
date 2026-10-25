@@ -1,0 +1,42 @@
+/** Palabras clave entregadas por el cliente (2026-10-24). */
+export const keywords = [
+  'clínica metabólica',
+  'metabolismo',
+  'nutrición',
+  'tratamiento médico',
+  'bajar de peso',
+  'hábitos',
+  'semaglutida',
+  'tirzepatida',
+  'dietas',
+  'control del peso',
+  'resistencia a la insulina',
+  'diabetes',
+  'control de diabetes',
+  'bariatra',
+  'médico',
+  'obesidad',
+  'infertilidad',
+  'colesterol y triglicéridos altos',
+  'hígado graso',
+  'síndrome de ovario poliquístico',
+  'hipotiroidismo',
+  'subí de peso',
+  'menopausia',
+  'glp1',
+  'glp-1',
+  'glp',
+]
+
+/** Condiciones que se muestran en la página y se marcan en JSON-LD. */
+export const conditions = [
+  { name: 'Obesidad y sobrepeso', schema: 'Obesity' },
+  { name: 'Resistencia a la insulina', schema: 'Insulin resistance' },
+  { name: 'Diabetes tipo 2 y control de glucosa', schema: 'Type 2 diabetes' },
+  { name: 'Colesterol y triglicéridos altos', schema: 'Dyslipidemia' },
+  { name: 'Hígado graso', schema: 'Fatty liver disease' },
+  { name: 'Síndrome de ovario poliquístico (SOP)', schema: 'Polycystic ovary syndrome' },
+  { name: 'Hipotiroidismo', schema: 'Hypothyroidism' },
+  { name: 'Menopausia y aumento de peso', schema: 'Menopause' },
+  { name: 'Infertilidad relacionada con el peso', schema: 'Infertility' },
+] as const

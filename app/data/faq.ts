@@ -16,6 +16,10 @@ export const faqs = [
     a: 'Porque el medicamento controla el apetito, pero los hábitos y la relación con la comida son los que evitan que el peso regrese al terminar. El acompañamiento triple reduce la reganancia y mejora los resultados durante el tratamiento.',
   },
   {
+    q: '¿Me sirve si tengo resistencia a la insulina, diabetes, hígado graso, SOP o hipotiroidismo?',
+    a: 'Somos una clínica metabólica, así que atendemos el control del peso junto con esas condiciones, además de colesterol y triglicéridos altos, menopausia e infertilidad relacionada con el peso. En la valoración el médico revisa tu caso y define si el tratamiento con GLP‑1 es adecuado para ti y cómo ajustarlo.',
+  },
+  {
     q: '¿Cuánto cuesta y cómo aplican las promociones?',
     a: 'El tratamiento es 100% personalizado: desde $3,499 MXN con semaglutida y desde $4,499 MXN con tirzepatida. Por tiempo limitado, 15% de descuento al pagar tres meses de tratamiento de contado. Menciona la promoción al agendar.',
   },
