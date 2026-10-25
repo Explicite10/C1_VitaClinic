@@ -6,10 +6,10 @@ const milestones: Milestone[] = [
   { m: 12, label: 'Hasta −25%', sub: 'de tu peso inicial', tone: 'mark', place: 'n' },
 ]
 
-const people = [
-  { src: '/team/psicologa.webp', role: 'Psicología', cls: 'p--left' },
-  { src: '/team/medico.webp', role: 'Médico', cls: 'p--center' },
-  { src: '/team/nutriologa.webp', role: 'Nutrición', cls: 'p--right' },
+const labels = [
+  { role: 'Psicología', x: '18%' },
+  { role: 'Médico', x: '47%' },
+  { role: 'Nutrición', x: '81%' },
 ]
 </script>
 
@@ -41,20 +41,25 @@ const people = [
         </ul>
       </div>
 
-      <div class="hero__people" aria-label="Equipo de médico, psicología y nutrición">
-        <figure v-for="p in people" :key="p.role" class="person" :class="p.cls">
-          <img :src="p.src" :alt="`Especialista de ${p.role.toLowerCase()}`" width="800" height="1100" />
-          <figcaption>{{ p.role }}</figcaption>
-        </figure>
-      </div>
+      <figure class="hero__people">
+        <img
+          src="/team/equipo.webp"
+          alt="Equipo de VitaClinic: psicóloga, médico y nutrióloga"
+          width="1300"
+          height="1034"
+          fetchpriority="high"
+        />
+        <figcaption class="visually-hidden">Psicología, médico y nutrición</figcaption>
+        <span v-for="l in labels" :key="l.role" class="hero__tag" :style="{ left: l.x }" aria-hidden="true">{{ l.role }}</span>
+      </figure>
     </div>
 
     <div class="container hero__chart">
-      <p class="hero__claim" data-reveal>Puedes perder <strong>hasta un 25%</strong> de tu peso</p>
+      <p class="hero__claim" data-reveal>Pierde <strong>hasta un 25%</strong> de tu peso*</p>
       <WeightCurve
         :milestones="milestones"
         :duration="3000"
-        caption="Los resultados dependen del medicamento, dosis, tiempo de tratamiento y características individuales."
+        caption="Los resultados dependen del medicamento, dosis, tiempo de tratamiento y características individuales.*"
       />
     </div>
   </section>
@@ -135,51 +140,32 @@ const people = [
   color: var(--field-050);
 }
 
-/* Equipo recortado */
+/* Equipo (foto grupal sin fondo) */
 .hero__people {
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1.2fr 1fr;
-  margin-bottom: calc(-1 * clamp(3rem, 2rem + 4vw, 5rem));
-  align-items: end;
-  min-height: 0;
+  margin: 0 0 calc(-1 * clamp(3rem, 2rem + 4vw, 5rem));
 }
 .hero__people::before {
   content: '';
   position: absolute;
-  left: 6%;
-  right: 6%;
+  left: 4%;
+  right: 4%;
   bottom: 0;
-  height: 78%;
+  height: 80%;
   border-radius: 999px 999px var(--radius-lg) var(--radius-lg);
   background: radial-gradient(80% 70% at 50% 100%, color-mix(in oklab, var(--field-400) 60%, transparent), transparent 75%);
 }
-.person {
+.hero__people img {
   position: relative;
-  margin: 0;
-  display: grid;
-  justify-items: center;
-}
-.person img {
   width: 100%;
   height: auto;
   display: block;
   filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.35));
 }
-.p--left {
-  margin-right: -24%;
-  z-index: 1;
-}
-.p--center {
-  z-index: 2;
-}
-.p--right {
-  margin-left: -24%;
-  z-index: 1;
-}
-.person figcaption {
+.hero__tag {
   position: absolute;
-  bottom: 6%;
+  bottom: 8%;
+  transform: translateX(-50%);
   padding: 0.35em 0.85em;
   border-radius: var(--radius-pill);
   background: var(--field-050);

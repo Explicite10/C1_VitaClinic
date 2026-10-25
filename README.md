@@ -32,7 +32,7 @@ Define `NUXT_PUBLIC_SITE_URL=https://tu-dominio.com` al generar para que canonic
 - **Promoción 15% (3 meses de contado)**: ya no tiene sección propia; solo se menciona en preguntas frecuentes (`app/data/faq.ts`).
 - **Sin testimonios ni perfiles de doctores** por indicación del cliente (2026-10-20). La landing es informativa y promocional: tratamiento, paquetes, consultorios.
 - **Paquetes**: 3, 5, 7 meses y más de 1 año, con «cotización personalizada». Precio base por medicamento en `pricing.meds` de `app/data/clinic.ts` (semaglutida $3,499, tirzepatida $4,499).
-- **Fotos del equipo** (`public/team/`): son fotos de stock de Pexels (licencia libre, uso comercial permitido) recortadas sin fondo. No son el personal real de VitaClinic: sustitúyelas por fotos del equipo real cuando existan, con el mismo nombre de archivo. Fuentes: médico pexels.com/photo/32160037, psicóloga pexels.com/photo/7904477, nutrióloga pexels.com/photo/20002955, enfermera pexels.com/photo/27666717.
+- **Fotos del equipo** (`public/team/`): `equipo.webp` (hero), `medico.webp`, `nutriologa.webp` y `psicologa.webp` son imágenes proporcionadas por el cliente con el fondo quitado. `enfermera.webp` sigue siendo foto de stock de Pexels (pexels.com/photo/27666717) hasta tener una del cliente.
 - **Curva de peso**: es ilustrativa y está etiquetada así en pantalla. No representa datos de pacientes.
 - **Imagen OG** (`public/og.png`): captura del hero. Regénerala si cambias el titular.
 
