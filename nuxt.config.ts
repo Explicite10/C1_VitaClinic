@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: true,
 
-  modules: ['@nuxtjs/sitemap', '@nuxtjs/robots', '@nuxt/fonts'],
+  modules: ['@nuxtjs/sitemap', '@nuxtjs/robots', '@nuxt/fonts', '@vercel/analytics'],
 
   site: {
     url: siteUrl,
